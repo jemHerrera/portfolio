@@ -1,0 +1,112 @@
+@use '../abstracts/index' as *;
+
+#about{    
+    @include flex($direction:column, $justify:center, $gap: 3em);
+
+    >*{
+        @include flex($direction:column, $align:flex-start, $gap: 1em);
+
+        &.title{
+            img{
+                height: 6em;
+                width: 6em;
+                border-radius: 10em;
+                margin-bottom: 1em;
+            }
+        }
+
+        &.stories{
+            @include flex($direction:column, $align:flex-start, $gap: 1em);
+
+            .story{
+                @include flex($direction:column, $align:flex-start, $gap: 1em);
+
+                p{
+                    color: $color-gray5;
+                }
+            }
+        }
+
+        &.work-experience{
+            @include flex($direction:column, $align:flex-start, $gap: 2em);
+            border-top: 1px solid $color-gray3;
+            border-bottom: 1px solid $color-gray3;
+            padding: 4rem 0;
+
+            .experience-list{
+                width: 100%;
+
+                .experience{
+                    @include flex($justify: space-between);
+                    width: 100%;
+
+                    .details{
+                        @include flex($direction:column, $gap: 1em);
+
+                        .title{
+                            font-weight: 700;
+                        }
+                        .project-list{
+                            @include flex($direction:column, $gap:0.5em);
+
+                            li{
+                                margin-left: 1em;
+                                
+                                a, a > i{
+                                    color: $color-gray5;
+
+                                    &:hover{
+                                        color: $color-gray4;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.about-this-site{
+            ul{
+                @include flex($direction:column, $gap:0.5em);
+                padding: 1em;
+
+                li{
+                    list-style-type: disc;
+                    margin-left: 1em;
+                }
+            }
+        }
+
+        @include media-xs{
+            &.work-experience{
+                .experience-list{
+                    .experience{
+                        @include flex($justify: space-between, $gap: 1em);
+                        .details{
+                            .project-list{
+                                gap: 0;
+
+                                li{
+                                    margin-left: 0;
+                                    a{
+                                        font-size: 0.8em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .resume{
+                    width: 100%;
+                }
+            }
+            &.about-this-site{
+                ul{
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,95 @@
+@use '../abstracts/index' as *;
+
+.side-nav{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+    @include flex($align:center, $justify:center);
+    
+    .links-container{
+        @include flex($direction:column, $justify:center, $align:flex-start, $gap:1em);
+        width: 1000px;
+        height: 100%;
+
+        a{
+            width: 0.65em;
+            height: 0.65em;
+            transform: rotate(45deg);
+            background-color: $color-gray3;
+            cursor: pointer;
+    
+
+            &::before{
+                content:'';
+                height: 1em;
+                width: 1em;
+                display: block;
+            }
+
+            &:hover{
+                background-color: $color-gray4;
+            }
+    
+            &.active{
+                height: 3em;
+                transform: rotate(0deg);
+                background-color: $color-teal;
+    
+                &:hover{
+                    background-color: $color-teal;
+                }
+            }
+
+            &.logo{
+                display: none;
+            }
+        }
+    }
+
+    @include media-m{
+        position: fixed;
+        top: 3px;
+        background-color: $color-gray1;
+        height: auto;
+        border-bottom: 1px solid $color-gray2;
+        padding: 0;
+        z-index: 2;
+
+        .links-container{
+            padding: 0.5rem 2rem;
+            max-width: $page-width;
+            @include flex($direction:row, $justify:flex-start, $align:center, $gap:1em);
+
+            a{
+                width: 0.5em;
+                height: 0.5em;
+                @include flex($align:center, $justify:center);
+
+                &::before{
+                    display: none;
+                }
+                &.active{
+                    width: 2em;
+                    height: 0.5em;
+                }
+
+                &.logo{
+                    display: block;
+                    transform: rotate(0deg);
+                    height: 2.5em;
+                    width: 2.5em;
+                    border-radius: 3em;
+                    overflow: hidden;
+                    margin-right: 1rem;
+
+                    img{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

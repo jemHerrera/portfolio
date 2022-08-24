@@ -1,0 +1,287 @@
+@use '../abstracts/index' as *;
+
+#projects{
+    @include flex($direction:column, $justify:center, $gap: 3em);
+
+    >*{
+        @include flex($direction:column, $align:flex-start, $gap: 1em);
+
+        &.project-list{
+            .project{
+                .project-handle{
+                    @include flex($gap:2em);
+                    padding: 1.5em;
+                    background-color: $color-gray1;
+                    border: 2px solid $color-gray3;
+                    cursor: pointer;
+                    *{
+                        pointer-events: none;
+                    }
+    
+                    &:hover{
+                        background-color: $color-gray2;
+                        border: 2px solid $color-gray4;
+                    }
+    
+                    img{
+                        height: 5em;
+                        width: 5em;
+                    }
+    
+                    .project-summary{
+                        @include flex($direction:column, $gap:1em);
+    
+                        .project-title{
+                            @include flex($align:flex-end, $gap:0.5em);
+                            
+                            .personal-project{
+                                font-size: 10px;
+                                padding: 0.5em;
+                                background: #172527;
+                                color: $color-teal;
+                            }
+                        }
+                        .project-description{
+                            font-size: 0.8em;
+                            color: $color-gray5;
+                        }
+                    }    
+                }
+                .project-content{
+                    opacity:0;
+                    pointer-events: none;
+                    position: fixed;
+
+                    .project-content-inner{
+                        transition: opacity 250ms, transform 400ms;
+                        opacity: 0;
+                        transform: translateY(4rem);
+                    }
+
+                    &.active{
+                        @include flex($direction:column, $align:center, $justify:flex-start);
+                        padding-top: 10rem;
+                        opacity:1;
+                        pointer-events: auto;
+                        cursor: default;
+                        overflow: auto;
+                        top:0;
+                        left:0;
+                        bottom:0;
+                        right:0;
+
+                        .project-content-inner{
+                            background-color: $color-gray1;
+                            max-width: 800px;
+                            opacity: 1;
+                            transform: translateY(0);
+                            padding: 4rem 2rem;
+                            position: relative;
+                            z-index: 1;
+
+                            .decorative-bar{
+                                position: absolute;
+                                height: 3px;
+                                width: 100%;
+                                background-color: $color-teal;
+                                top: 0;
+                                left: 0;
+                            }
+
+                            .fa-xmark{
+                                position: absolute;
+                                top:0;
+                                right: 0;
+                                margin: 1em;
+                                font-size: 1.5rem;
+                                cursor: pointer;
+                            }
+
+                            .head{
+                                @include flex($gap: 1em);
+                                padding-bottom: 3rem;
+                                border-bottom: 1px solid $color-gray2;
+
+                                img{
+                                    border-radius: 3px;
+                                    width: 5em;
+                                    height: 5em;
+                                }
+
+                                .title-group{
+                                    .tags{
+                                        color: $color-gray3;
+                                        font-size: 0.8em;
+                                    }
+                                    .cta-group{
+                                        margin-top:0.5em;
+                                        @include flex($gap: 1em);
+
+                                        a{
+                                            background:none;
+                                            color: white;
+                                            text-decoration: underline;
+                                            font-size: 0.8em;
+                                            cursor: pointer;
+
+                                            &:hover{
+                                                color: $color-teal;
+                                                i{
+                                                    color: $color-teal;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .body{
+                                padding: 2rem 0;
+                                @include flex($direction:column, $gap: 3rem);
+
+                                section{
+                                    @include flex($direction:column, $gap: 1.5rem);
+                                    padding: 0 3rem;
+
+                                    h3{
+                                        font-size: 1.5rem;
+                                    }
+                                    p, li{
+                                        font-weight: 300;
+                                        line-height: 1.75;
+                                    }
+                                    li{
+                                        list-style-type: disc;
+                                        margin-left: 1rem;
+                                    }
+
+                                    &.images{
+                                        @include grid-equal(3);
+                                        gap: 1rem;
+                                        padding:0;
+                                        
+                                        img{
+                                            object-fit: contain;
+                                            width: 100%;
+                                            border-radius: 1.5rem;
+                                        }
+                                    }
+                                    &.image{
+                                        padding:0;
+                                        img{
+                                            border-radius: 1.5rem;
+                                        }
+                                    }
+                                }
+
+                                .button-1{
+                                    align-self:flex-start;
+                                    margin: 0 3rem;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        .project-background{
+                            background-color: rgb(29 25 54 / 70%);
+                            position: fixed;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                        }
+                    }
+                }
+            }
+
+            @include media-m{
+                .project{
+                    .project-content{
+                        &.active{
+                            .project-content-inner{
+                                max-width: 700px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include media-xs{
+                .project{
+                    .project-handle{
+                        @include flex($direction:column, $gap: 1rem);
+    
+                        img{
+                            height: 3.5em;
+                            width: 3.5em;
+                        }
+                    }
+                    .project-content{
+                        &.active{
+                            padding: 0;
+
+                            .project-content-inner{
+                                max-width: 100%;
+                                padding: 0 0 3rem 0;
+
+                                .decorative-bar{
+                                    position:sticky;
+                                    top: 0;
+                                }
+
+                                .head{
+                                    position:sticky;
+                                    top: 3px;
+                                    padding: 1rem;
+                                    background-color: $color-gray1;
+
+                                    img{
+                                        width: 3em;
+                                        height: 3em;
+                                    }
+
+                                    .title-group{
+                                        h2{
+                                            font-size: 1em;
+                                        }
+                                        .cta-group{
+                                            flex-wrap: wrap;
+                                        }
+
+                                        .tags{
+                                            display: none;
+                                        }
+                                    }
+                                }
+
+                                .fa-xmark{
+                                    margin: 0.5em;
+                                }
+
+                                .body{
+                                    section{
+                                        padding: 0 1rem;
+                                        &.images{
+                                            @include grid-equal(1);
+                                            padding: 0 1rem;
+                                        }
+
+                                        &.image{
+                                            padding: 0 1rem;
+                                        }
+                                    }
+
+                                    .button-1{    
+                                        align-self: stretch;
+                                        margin: 0 1rem;
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
