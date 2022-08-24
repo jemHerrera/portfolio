@@ -84,6 +84,8 @@
                     .experience{
                         @include flex($justify: space-between, $gap: 1em);
                         .details{
+                            gap: 0;
+                            
                             .project-list{
                                 gap: 0;
 

@@ -78,6 +78,7 @@ h3 {
   padding: 1em 2em;
   background-color: #11101A;
   border: 2px solid #5D5B6B;
+  text-align: center;
 }
 .button-1:hover {
   background-color: #292734;
@@ -201,7 +202,7 @@ body.overflow-hidden {
 }
 #projects > *.project-list .project .project-handle:hover {
   background-color: #292734;
-  border: 2px solid #9189C7;
+  border: 1px solid #9189C7;
 }
 #projects > *.project-list .project .project-handle img {
   height: 5em;
@@ -558,6 +559,9 @@ body.overflow-hidden {
     align-items: stretch;
     justify-content: space-between;
     gap: 1em;
+  }
+  #about > *.work-experience .experience-list .experience .details {
+    gap: 0;
   }
   #about > *.work-experience .experience-list .experience .details .project-list {
     gap: 0;
