@@ -168,8 +168,10 @@
                                     }
                                     &.image{
                                         padding:0;
+                                        display: block;
                                         img{
                                             border-radius: 1.5rem;
+                                            width: 100%;
                                         }
                                     }
                                 }

@@ -362,9 +362,11 @@ body.overflow-hidden {
 }
 #projects > *.project-list .project .project-content.active .project-content-inner .body section.image {
   padding: 0;
+  display: block;
 }
 #projects > *.project-list .project .project-content.active .project-content-inner .body section.image img {
   border-radius: 1.5rem;
+  width: 100%;
 }
 #projects > *.project-list .project .project-content.active .project-content-inner .body .button-1 {
   align-self: flex-start;
