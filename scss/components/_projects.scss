@@ -267,7 +267,11 @@
                                         }
 
                                         &.image{
-                                            padding: 0 1rem;
+                                            img{
+                                                padding: 0 1rem;
+                                                height: auto;
+                                                object-fit: contain;
+                                            }
                                         }
                                     }
 
