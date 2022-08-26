@@ -1,6 +1,6 @@
 
 <!-- to do
-1. proofread and reduce content
+1. proofread and reduce content. double check all links
 2. design and ux clean-up 
     - close project button to close to figma button on mobile
 -->
@@ -12,6 +12,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jem Herrera</title>
+        <link rel="icon" type="image/x-icon" href="./assets/pixelpfp.jpg">
         <link rel="stylesheet" href="./dist/style.css">
         <script src="https://kit.fontawesome.com/b25b64552f.js" crossorigin="anonymous"></script>
         <script defer src="./dist/script.js"></script>
@@ -34,11 +35,11 @@
                         <span class="color-red">Jem</span>,
                         <span class="color-teal">Web Developer.</span>
                     </h1>
-                    <p class="color-gray3">Front-end Developer / UI/UX Developer / Shopify Theme Developer</p>
+                    <p class="color-gray3">Front-end Development / UI/UX Design / Shopify Theme Development</p>
                 </div>
                 <div class="content">
-                    <p>Based in Calgary, Alberta, Canada, I enjoy building single page Front-End applications with a focus on simplicity & usability.</p>
-                    <p>I’m currently working as a freelance developer for a select client, but is also open to full-time Front-end developer positions.</p>
+                    <p>I'm a web developer who designs and builds Front-End applications with a focus on simplicity & usability.</p>
+                    <p>I'm currently looking for a full-time Junior or Intermediate Front-end developer positions.</p>
                 </div>
                 <div class="cta">
                     <a class="button-1" class="contact" href="mailto:jhneramuz@gmail.com">Contact Me!</a>
@@ -52,7 +53,7 @@
             <section class="main-section" id="projects">
                 <div class="title">
                     <h2>Projects</h2>
-                    <p class="color-gray3">A collection of select projects, including sites I’ve built from previous work as well as some personal projects.</p>
+                    <p class="color-gray3">A collection of sites I’ve built from work and some personal projects.</p>
                 </div>
                 <ul class="project-list">
                     <li id="scriddish" class="project">
@@ -63,7 +64,7 @@
                                     <h3>Scriddish</h3>
                                     <span class="personal-project">Personal Project</span>
                                 </div>
-                                <p class="project-description">Scriddish is a single-page meal planning application made using Vue. The purpose of the app is to allow me to select and save my meals for the next few days, and automatically create a grocery list for those meals readily sorted out automatically.</p>
+                                <p class="project-description">Scriddish is a mobile web application for meal planning. The app allows user to select from a variety of recipes and save them.</p>
                             </div>
                         </div>
                         <div class="project-content">
@@ -73,11 +74,11 @@
                                     <img src="./assets/scriddish/scriddish.png" alt="" class="project-logo">
                                     <div class="title-group">
                                         <h2 class="title">Scriddish</h2>
-                                        <p class="tags">HTML / SCSS / Vue3 / Vue Router</p>
                                         <div class="cta-group">
                                             <a target="_blank" href="https://jemherrera.github.io/scriddish/">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <a target="_blank" href="https://github.com/jemHerrera/scriddish">Github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <a target="_blank" href="https://www.figma.com/file/J8uQpG1y6aDwIEaYTBmuwt/Scriddsh?node-id=403%3A282">Figma <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <div class="separator"></div>
+                                            <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/scriddish"><i class="fa-brands fa-github"></i></a>
+                                            <a class="icon-link" target="_blank" href="https://www.figma.com/file/J8uQpG1y6aDwIEaYTBmuwt/Scriddsh?node-id=403%3A282"><i class="fa-brands fa-figma"></i></a>
                                         </div>
                                     </div>
                                     <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
@@ -85,40 +86,26 @@
                                 <div class="body">
                                     <section class="about">
                                         <h3>About Scriddish</h3>
-                                        <p>If you much prefer to cook meals at home, then you must understand my struggles. Cooking at home on a consistent basis is a lot harder than it sounds. It requires tremendous amount of dedication, planning and mental effort. This is why most prefer eating out or ordering food online. Here is an example of my usual grocery shopping routine:</p>
-                                        <p><i class="color-gray3 font-weight-300">First I have to decide which set of meals to cook for the next few days. This means I have to spend time researching recipes online or remembering recipes that I already know. The next step is to list down ingredients for grocery shopping, but I have to make sure not to add ingredients that already exist in the pantry. I also need to make sure that my grocery list is sorted by meats, produce, condiments, sauces, etc. so I don’t have to waste time going back and forth between different sections and aisles in the grocery store.</i></p>
-                                        <p>I had to keep on repeating these tasks almost twice a week and I find it quite time consuming. So it made me think, Why not build a tool that can ease up or automate some of these repetitive tasks for the sake of my inner peace? And thus Scriddish was born..</p>
-                                        <p><span class="color-red">Scriddish</span> is one of my personal projects, a Single Page Application that I built to help me with my meal planning struggles. I have no idea why I called it Scriddish, but atleast it’s not generic such as “Meal Planner Mock Application”.</span></p>
+                                        <p><span class="color-red">Scriddish</span> is a single-page Front-End application built using Vue3. As someone who likes to cook at home, meal planning can consume a lot of time, effort and decision making. I built Scriddish not only as a portfolio project, but also as a tool to help me save time when planning meals.</span></p>
                                     </section>
                                     <section class="images">
                                         <img src="./assets/scriddish//ss1.PNG" alt="">
-                                        <img src="./assets/scriddish//ss3.PNG" alt="">
-                                        <img src="./assets/scriddish//ss6.PNG" alt="">
+                                        <img src="./assets/scriddish//ss4.PNG" alt="">
+                                        <img src="./assets/scriddish//ss5.PNG" alt="">
                                     </section>
                                     <section class="objectives">
-                                        <h3>Objectives</h3>
-                                        <p>The following are the main functions of the app:</p>
+                                        <h3>Features</h3>
+                                        <p>The following are the main features of the app:</p>
                                         <ul>
-                                            <li>Easily choose from a list of recipes</li>
-                                            <li>Add and remove recipes to a meal plan. A meal plan contains recipes that I want to cook for the next few days</li>
-                                            <li>Create a sorted list of ingredients for more efficient grocery shopping</li>
+                                            <li>Choose from a list of recipes and add them to a meal plan</li>
+                                            <li>Create a sorted list of ingredients based on the selected recipes</li>
                                             <li>Search a recipe by name or ingredient</li>
                                             <li>View a recipe’s cooking instructions</li>
                                         </ul>
                                     </section>
-                                    <section class="images">
-                                        <img src="./assets/scriddish//ss2.PNG" alt="">
-                                        <img src="./assets/scriddish//ss4.PNG" alt="">
-                                        <img src="./assets/scriddish//ss5.PNG" alt="">
-                                    </section>
-                                    <section class="challenges">
-                                        <h3>Challenges</h3>
-                                        <p>Probably the biggest challenge for this project is planning the code architecture. Starting to code from scratch is exciting because there are endless ways to build, but at the same time it can also be quite overwhelming. I had to consider possible features and edge cases on the planning phase to avoid hitting major development walls.</p>
-                                        <p>Aside from building the project itself, my secondary goal is to use this project as an opportunity to practice and learn Vue3’s new Composition API. While learning as I go, I had to experiment on finding better ways to structure my components. It also involves setting up navigation between components and modals and as well as figuring out how to structure recipe data in a way that it’s easy to keep adding more in the future.</p>
-                                    </section>
                                     <section class="future-plans">
                                         <h3>Future Plans</h3>
-                                        <p>For the next phase of the project, I am planning to include user features, where accounts can be created. Each individual account can contribute by creating their own recipes, which they can set as private or public, much like github but for recipes. For this I have to learn how to set up a database, as well as learn back-end software development.</p>
+                                        <p>For the next phase of the project, I am planning to improve the overall design and UX, as well as include user features, where accounts can be created. Each individual account can contribute by creating their own recipes, much like Github but for food recipes.</p>
                                     </section>
                                     <a target="_blank" href="https://jemherrera.github.io/scriddish/" class="button-1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
@@ -134,7 +121,7 @@
                                 <div class="project-title">
                                     <h3>Doctor's Optical Lab</h3>
                                 </div>
-                                <p class="project-description">Doctor’s Optical Lab is a wholesaler of prescription lenses. Under the company Eylence Group, I was tasked to develop a custom single page prescription lens ordering system using Shopify platform.</p>
+                                <p class="project-description">DOL is a wholesaler of prescription lenses. My task was to build a custom Shopify theme with a prescription lens ordering app.</p>
                             </div>
                         </div>
                         <div class="project-content">
@@ -144,10 +131,10 @@
                                     <img src="./assets/dol/dol.png" alt="" class="project-logo">
                                     <div class="title-group">
                                         <h2 class="title">Doctor's Optical Lab</h2>
-                                        <p class="tags">Shopify Liquid / SCSS / VueJS / Vue Router</p>
                                         <div class="cta-group">
                                             <a href="https://doctorsopticallab.com/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <a href="https://www.figma.com/file/iOWGnlDELbROZcalgUNFmA/DOL-Wireframes?node-id=0%3A1" target="_blank">Figma <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <div class="separator"></div>
+                                            <a class="icon-link" href="https://www.figma.com/file/iOWGnlDELbROZcalgUNFmA/DOL-Wireframes?node-id=0%3A1" target="_blank"><i class="fa-brands fa-figma"></i></a>
                                         </div>
                                     </div>
                                     <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
@@ -155,32 +142,30 @@
                                 <div class="body">
                                     <section class="about">
                                         <h3>About Doctor's Optical Lab</h3>
-                                        <p><span class="color-red">Doctors’s Optical Lab</span> is one of the projects that I built for Eylence Group. DOL is a business-to-business wholesaler, offering prescription lenses to local eyewear retailers. I collaborated with a marketing manager and a graphic designer to create a visually pleasing website for clients to order prescription lenses online.</p>
+                                        <p><span class="color-red">Doctors’s Optical Lab</span> is a business-to-business wholesaler, offering prescription lenses to local eyewear retailers. I collaborated with a marketing manager and a graphic designer to create an e-commerce site where clients can easily order lenses online.</p>
                                     </section>
                                     <section class="marketing-and-design">
-                                        <h3>Marketing and Design</h3>
-                                        <p>Having to work with a small team, there are a lot of overlapping tasks that we share among the team members. From the experience I also had the opportunity to be involved on other fields such as design, branding and marketing.</p>
+                                        <h3>Marketing and Branding</h3>
+                                        <p>There are overlapping tasks we shared among the team members. From the experience I had the opportunity to be involved in other fields such as design, branding and marketing.</p>
                                     </section>
                                     <section class="lens-app">
                                         <h3>The Lens Ordering App</h3>
-                                        <p>The most essential feature of this website is its ordering system for prescription lenses. Prescription lenses are not structured similarly as the typical e-commerce items such as clothing where each item has only a few varieties of color and size. Prescription lenses are much more complex, where each product is a combination of different kinds of lens type, lens thickness, lens coating, and each has its own range of sphere power and cylinder power. The client wanted to build the prescription selections in a two dimensional grid format, where the Y-axis corresponds to the Sphere power of the lens, while the X-axis corresponds to the Cylinder.</p>
+                                        <p>The most essential feature of this website is its ordering app. The client wanted to build the prescription selections in a two dimensional grid format, where the Y-axis corresponds to the Sphere power of the lens, while the X-axis corresponds to the Cylinder.</p>
                                     </section>
                                     <section class="image">
                                         <img src="./assets/dol/ss1.png" alt="">
                                     </section>
                                     <section class="note">
-                                        <i class="color-gray3">Note: The Lens Ordering app is only available privately to company clients. If you wish to view it live, please contact me via LinkedIn or by sending me an email.</i>
+                                        <i class="color-gray3">Note: The Lens Ordering app is only available privately to company clients. If you wish to view it live, please feel free to contact me.</i>
                                     </section>
                                     <section class="image">
                                         <img src="./assets/dol/ss2.png" alt="">
                                     </section>
                                     <section class="challenges">
-                                        <h3>Objectives</h3>
-                                        <p>Having this position as my first ever developer job without any Senior to teach me the ropes, I had to learn everything on my own while staying as productive as possible. Most of the time when I don’t have a solid solution to a problem right away, I had to map out all the possible solutions, explore them one by one, and find the best solution out of them. Although this approach takes a lot of time, this process helped me a lot in improving my problem solving skills. </p>
-                                    </section>
-                                    <section class="lessons">
-                                        <p>From this project I have learned the ins and outs of Shopify APIs, as well as how to use a combination of VueJs and Liquid(Shopify’s templating language) to effectively display 10k+ different combinations of lens products in a single web page without affecting the loading times.</p>
-                                        <p>From this project I also improved my design and UX skills. On top of the development tasks it was also my job to build a dashboard style user interface with a focus on usability, simplicity and aesthetics.</p>
+                                        <h3>What I've learned</h3>
+                                        <p>As my first ever developer job, I had to learn the ropes on my own while keeping productivity. At times when I did not have a solid solution to a problem, I had to map out all the possible solutions, and explore them one by one. Although this approach takes a lot of time, this process helped me grow as a developer.</p>
+                                        <p>From this project I have learned the ins and outs of Shopify, as well as how to use a combination of VueJs, Shopify’s AJAX API and Liquid(Shopify’s templating language) to effectively display thousands of lens products in a single web page without affecting the loading times.</p>
+                                        <p>From this project I also improved my design and UX skills. On top of the development I was also tasked to ensure that the UI is intuitive to use and visually pleasing.</p>
                                     </section>
                                     <a href="https://doctorsopticallab.com/" target="_blank" class="button-1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
@@ -197,7 +182,7 @@
                                     <h3>Sense of Neumor</h3>
                                     <span class="personal-project">Personal Project</span>
                                 </div>
-                                <p class="project-description">Sense of Neumor is a simple and quick project I built on the side. The objective is to generate a beautiful 3D shadow, based on the position of a draggable light source. It’s still a work in progress and I’m aiming to add more functionalities as I go.</p>
+                                <p class="project-description">Sense of Neumor is a simple fun project. The goal is to showcase a dynamically rendered UI shadow based on a draggable light source.</p>
                             </div>
                         </div>
                         <div class="project-content">
@@ -207,11 +192,10 @@
                                     <img src="./assets/sense-of-neumor/sense-of-neumor.png" alt="" class="project-logo">
                                     <div class="title-group">
                                         <h2 class="title">Sense of Neumor</h2>
-                                        <p class="tags">HTML / SCSS / JavaScript</p>
                                         <div class="cta-group">
-                                            <a href="#" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <a href="#" target="_blank">Github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <a href="#" target="_blank">Figma <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <a href="https://jemherrera.github.io/sense-of-neumor/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <div class="separator"></div>
+                                            <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/sense-of-neumor"><i class="fa-brands fa-github"></i></a>
                                         </div>
                                     </div>
                                     <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
@@ -219,11 +203,11 @@
                                 <div class="body">
                                     <section class="about">
                                         <h3>About Sense of Neumor</h3>
-                                        <p><span class="color-red">Sense of Neumor</span> is a simple but fun project. The objective is to feature a new kind of UI style called neumorphism, which is associated with a more realistic shadow effect. Applying neumorphic style to a UI element often involves not just a shadow on one side, but also a highlight on the opposite side. For this to work the background color must be slightly darker than white(#FFF). This creates a realistic 3D effect where a light source is more apparent.</span></p>
+                                        <p><span class="color-red">Sense of Neumor</span> features Neumorphism, a design style associated with a realistic shadow effect. Neumorphism involves a shadow on one side of an element, as well as a highlight on the opposite side. For this to work the background color must be slightly darker than white to allow the highlight to become visible, creating a more realistic 3D effect.</p>
                                     </section>
                                     <section class="dynamic-shadow">
                                         <h3>Dynamic Shadow</h3>
-                                        <p>The fun part of this project is to allow user to drag the light source across the screen, which would then change the angle of the shadow on the subject element. The process is about calculating the coordinates of the light source element relative to the subject, computing the angle, then converting the values into css box-shadow syntax.</p>
+                                        <p>To take this to the next level, we can allow the user to drag a light source element across the screen, which would result in a change of the angle of the shadow. The process involves computation of the coordinates and angle of the light source relative to the subject element, and then converting the values into css box-shadow syntax.</p>
                                     </section>
                                     <section class="image">
                                         <img src="./assets/sense-of-neumor/ss1.png" alt="">
@@ -232,7 +216,7 @@
                                         <h3>Future Plans</h3>
                                         <p>This project is still a work in progress. My plans for the next phase is to allow users to be able to adjust the light intensity, adjust the subject’s size and radius, as well as switch into dark mode. I also would love to include an auto-generated css box where users can copy the css for the given setup.</p>
                                     </section>
-                                    <a class="button-1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a target="_blank" href="https://jemherrera.github.io/sense-of-neumor/" class="button-1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
                             <div onclick="closeProjects()" class="project-background"></div>
@@ -246,7 +230,7 @@
                                 <div class="project-title">
                                     <h3>Sol Optix Online</h3>
                                 </div>
-                                <p class="project-description">Sol Optix Online is another Shopify store I’ve helped build under Eylence Group. Other than building a beautiful site itself, I was tasked to create visual simulations of different type of lenses using CSS and JavaScript.</p>
+                                <p class="project-description">Sol Optix Online is a beautiful website with visual simulations of different types of lenses.</p>
                             </div>
                         </div>
                         <div class="project-content">
@@ -256,7 +240,6 @@
                                     <img src="./assets/sol/sol.png" alt="" class="project-logo">
                                     <div class="title-group">
                                         <h2 class="title">Sol Optix Online</h2>
-                                        <p class="tags">Shopify Liquid / SCSS / VueJS</p>
                                         <div class="cta-group">
                                             <a href="https://soloptixonline.com/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </div>
@@ -266,18 +249,18 @@
                                 <div class="body">
                                     <section class="about">
                                         <h3>About Sol Optix Online</h3>
-                                        <p><span class="color-red">Sol Optix Online</span> is one of the projects that I built for Eylence Group. Sol Optix is an eyewear retail store based on Calgary, AB, Canada, offering eyewear related services like eye exams. I collaborated with a marketing manager and a graphic designer to create a visually pleasing website that represents the physical store.</span></p>
+                                        <p><span class="color-red">Sol Optix</span> is an eyewear retail store based in Calgary, AB, Canada, offering eye health services like eye exams. I collaborated with a marketing manager and a graphic designer to create a visually pleasing website that represents the physical store.</span></p>
                                     </section>
                                     <section class="image">
                                         <img src="./assets/sol/ss1.png" alt="">
                                     </section>
                                     <section class="marketing-and-design">
                                         <h3>Marketing and Design</h3>
-                                        <p>Having to work with a small team, there are a lot of overlapping tasks that we share among the team members. From the experience I also had the opportunity to be involved on other fields such as design, branding and marketing.</p>
+                                        <p>There are overlapping tasks we shared among the team members. From the experience I had the opportunity to be involved in other fields such as design, branding and marketing.</p>
                                     </section>
                                     <section class="the-website">
                                         <h3>The Website</h3>
-                                        <p>Sol Optix is one of the sites where the team put real effort on presentation and creative design. The team spent a lot of time working on the branding, colors and overall composition. One of the best projects within the website are the web-based visual simulators for different kinds of lenses, which can be accessed here. These simulators are currently being used as a sales tool at the store level.</p>
+                                        <p>Sol Optix is one of the sites where the team emphasized on presentation, branding and creative design. The website includes web-based visual simulators for different kinds of lenses, which can be accessed here. These simulators are currently being used as a marketing tool at the store level.</p>
                                     </section>
                                     <section class="image">
                                         <img src="./assets/sol/ss2.png" alt="">
@@ -295,7 +278,7 @@
                                 <div class="project-title">
                                     <h3>Eye Hub Warehouse</h3>
                                 </div>
-                                <p class="project-description">Eye Hub Warehouse is another E-commerce store that sells prescription eyeglasses and sunglasses online. The biggest technical challenge I encountered in building this site is to create an intuitive lens ordering system after every frame purchase.</p>
+                                <p class="project-description">Eye Hub Warehouse is an e-commerce store that sells prescription eyeglasses and sunglasses online.</p>
                             </div>
                         </div>
                         <div class="project-content">
@@ -305,7 +288,6 @@
                                     <img src="./assets/ehw/ehw.png" alt="" class="project-logo">
                                     <div class="title-group">
                                         <h2 class="title">Eye Hub Warehouse</h2>
-                                        <p class="tags">Shopify Liquid / SCSS / Vue3 / Vue Router</p>
                                         <div class="cta-group">
                                             <a href="https://eyehubwarehouse.ca/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </div>
@@ -315,25 +297,25 @@
                                 <div class="body">
                                     <section class="about">
                                         <h3>About Eye Hub Warehouse</h3>
-                                        <p><span class="color-red">Eyehub Warehouse</span> is one of the projects that I built for Eylence Group. Eye Hub Warehouse is an e-commerce store selling prescription glasses online. I collaborated with a marketing manager and a graphic designer to create build a website with focus on lead generation, marketing and sales.</span></p>
+                                        <p><span class="color-red">Eyehub Warehouse</span> is an e-commerce store selling prescription glasses online. I collaborated with a marketing manager and a graphic designer to build a site with focus on lead generation, marketing and sales.</p>
                                     </section>
                                     <section class="image">
                                         <img src="./assets/ehw/ss1.png" alt="">
                                     </section>
                                     <section class="marketing-and-design">
                                         <h3>Business Planning, Marketing and Design</h3>
-                                        <p>Having to work with a small team, there are a lot of overlapping tasks that we share among the team members. From the experience I also had the opportunity to be involved on other fields such as business planning, SEO, design, branding and marketing.</p>
+                                        <p>There are overlapping tasks we shared among the team members. From the experience I had the opportunity to be involved in other fields such as business planning, SEO, design, branding and marketing.</p>
                                     </section>
                                     <section class="lens-ordering-system">
                                         <h3>Lens Ordering System</h3>
-                                        <p>One of the most essential feature of this website is its ordering system for prescription lenses. Eye Hub Warehouse not only offers variety of eyewear, but also allows customers to add custom prescription lenses to their chosen frame.</p>
+                                        <p>One of the most essential features of this website is its ordering system for prescription lenses. Eye Hub Warehouse not only offers a wide variety of eyewear, but also allows customers to add custom prescription lenses.</p>
                                     </section>
                                     <section class="image">
                                         <img src="./assets/ehw/ss2.png" alt="">
                                     </section>
                                     <section class="challenges">
                                         <h3>Challenges</h3>
-                                        <p>One of the biggest technical challenges that I encountered in building Eye Hub Warehouse is the prescription system. Aside from the wide variety of lenses, what adds to the complexity is that customers have to input their prescription values. Based on the strength of their prescription, only a certain lens products are available. This means that every lens product must have their own “prescription range” associated with them. And the same goes for the glasses. Depending on the dimensions and sizes of the frame, only a certain strength of prescription is available. Working on this problem helped me learn and understand data structure and data manipulation.</p>
+                                        <p>One of the technical challenges I encountered while building the site is its prescription system. Aside from the wide variety of lenses, each lens product availability depends on customers’ prescription power. This means that every lens product must have their own “prescription range” associated with them.</p>
                                     </section>
                                     <a href="https://eyehubwarehouse.ca/" class="button-1" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
@@ -349,7 +331,7 @@
                                     <h3>Post App</h3>
                                     <span class="personal-project">Personal Project</span>
                                 </div>
-                                <p class="project-description">Post app is another simple personal project of mine. The objective of the project is to create an aesthetically pleasing and user-friendly front-end app that allows users to upload multiple images and text (much like social media) and post them on to the news feed.</p>
+                                <p class="project-description">Post app is another simple personal project where users can upload multiple images and text and post them to the news feed.</p>
                             </div>
                         </div>
                         <div class="project-content">
@@ -362,8 +344,9 @@
                                         <p class="tags">HTML / SCSS / Javascript</p>
                                         <div class="cta-group">
                                             <a href="https://jemherrera.github.io/news-post-app/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <a href="https://github.com/jemHerrera/news-post-app" target="_blank">Github <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <a href="https://www.figma.com/file/ubkjHeHkAuyMJCBNsLHlMp/Mock-Posting-App?node-id=0%3A1" target="_blank">Figma <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <div class="separator"></div>
+                                            <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/news-post-app"><i class="fa-brands fa-github"></i></a>
+                                            <a class="icon-link" target="_blank" href="https://www.figma.com/file/ubkjHeHkAuyMJCBNsLHlMp/Mock-Posting-App?node-id=0%3A1"><i class="fa-brands fa-figma"></i></a>
                                         </div>
                                     </div>
                                     <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
@@ -399,22 +382,22 @@
                 <div class="title">
                     <img src="./assets/pixelpfp.jpg" alt="" class="pfp">
                     <h2>About Me</h2>
-                    <p class="color-gray3">I’m a self-taught front-end web developer with 4 years of experience in HTML, CSS and Javascript.</p>
+                    <p class="color-gray3">I’m a self-taught web developer specializing in Javascript, Vue and Shopify Theme Development.</p>
                 </div>
                 <div class="stories">
                     <div id="story-experience" class="story">
                         <h3>Experience</h3>
-                        <p>The majority of my work experience come from Eylence Group, an eyewear conglomerate. After self-studying for 6 months back in 2018, I was hired as their web developer to work alongside with a marketing manager and a graphic designer. Our task is to build Shopify e-commerce stores with the focus on lead-generation and sales. My responsibility is to be in charge of the whole dev process. It was a perfect opportunity for me to learn and grow as a Junior developer.</p>
-                        <p>One of the challenges that I encountered in this experience is the absense of a senior developer to teach me the ropes, or another developer to brainstorm and compare work with. Although this gives me a lot of freedom to be creative, I had to be careful to get the habit of keeping my code as clean and as maintainable as possible. I needed to keep the balance between learning and production, as well as keep up with the updates in technologies and modern coding techniques. From the experience I became accustomed to using Shopify API, mainly manipulating product data and presenting them in the front-end in various creative ways.</p>
-                        <p>I currently work as a freelance dev for the same company, but is also looking for full-time opportunities. Since all the years of my experience I’ve only worked as the lone developer, I also would love to experience working with other developers to further grow my technical and communication skills. Despite the experience I consider myself still a beginner in the field, as there’s so much more to grasp and be proficient with.</p>
+                        <p>My work experience comes solely from Eylence Group, an eyewear conglomerate. After self-studying for 6 months in 2018, I was hired as their web developer to work alongside with a marketing manager and a graphic designer. My responsibility as the web developer is to be in charge of the whole dev process in building ecommerce sites. It was a perfect opportunity for me to learn and grow as a Junior developer. From the experience I became accustomed to using Shopify API, mainly through manipulation of product data and creatively presenting them in the Front-end.</p>
+                        <!-- <p class="more display-none">One of the challenges that I encountered in this experience is the absense of a senior developer to teach me the ropes, or another developer to brainstorm and compare work with. Although this gives me a lot of freedom to be creative, I had to be careful to get the habit of keeping my code as clean and as maintainable as possible. I needed to keep the balance between learning and production, as well as keep up with the updates in technologies and modern coding techniques. From the experience I became accustomed to using Shopify API, mainly manipulating product data and presenting them in the front-end in various creative ways.</p>
+                        <p class="more display-none">I currently work as a freelance dev for the same company, but is also looking for full-time opportunities. Since all the years of my experience I’ve only worked as the lone developer, I also would love to experience working with other developers to further grow my technical and communication skills. Despite the experience I consider myself still a beginner in the field, as there’s so much more to grasp and be proficient with.</p> -->
                     </div>
                     <div id="story-skills" class="story">
                         <h3>Skills</h3>
-                        <p>My technical skills lie in UI/UX design, front-end implementation and Shopify Theme Development. My prototyping software of choice is Figma, while my front-end framework of choice is Vue (I know I should start learning React). I’m a SOLID Design principle practitioner, slowly but surely making sure to improve on the way I keep my code readable, maintainable and expandable.</p>
+                        <p>My technical skills lie in UI/UX design, front-end implementation and Shopify Theme Development. My prototyping software of choice is Figma, while my front-end framework of choice is Vue (I know I should start learning React).</p>
                     </div>
                     <div id="story-hobby" class="story">
                         <h3>Outide Dev</h3>
-                        <p>Outside work I consider myself to be a lifetime learner who likes to improve and optimize. On my free time I love creating digital art, studying philosophy, working out, doing yoga and creating weird front-end projects. I also recently started doing Jiu Jitsu, and I love how there’s a huge world of techniques within it, endless possibilities of combinations of moves for me to uncover. I wish there’s more time for me to do all these activities. If you are interested in my digital art works, you can check them out on Instagram.</p>
+                        <p>Outside work I consider myself to be a lifetime learner who likes to improve and optimize. In my free time I love creating digital art, studying philosophy, working out, training Jiu Jitsu, practicing yoga and creating weird front-end projects. </p>
                     </div>
                 </div>
                 <div class="work-experience">
@@ -447,10 +430,10 @@
                     <h3>About this website</h3>
                     <p class="color-gray3">In case you are wondering this site is</p>
                     <ul>
-                        <li>Designed and developed on a Mac using <span class="color-red">Figma</span> and Visual Studio Code.</li>
-                        <li>Hosted on <span class="color-red">Github</span> Pages</li>
+                        <li>Developed on a Macbook Pro using <a target="_blank" href="https://www.figma.com/file/n32Rlx4QTQcvFb8GaRTlsd/Portfolio-2022?node-id=0%3A1"><span class="color-red">Figma</span></a> and VS Code.</li>
+                        <li>Hosted on <a target="_blank" href="https://github.com/jemHerrera/portfolio"><span class="color-red">Github</span></a></li>
                         <li>Programmed using Vanilla JavaScript</li>
-                        <li>Set in using a beautiful combination of <span class="color-red">Roboto Mono</span> and <span class="color-red">Montserrat</span> typefaces</li>
+                        <li>Set in a combination of <a target="_blank" href="https://fonts.google.com/specimen/Roboto+Mono"><span class="color-red">Roboto Mono</span></a> and <a href="https://fonts.google.com/specimen/Montserrat"><span class="color-red">Montserrat</span></a> typefaces</li>
                     </ul>
                 </div>
             </section>

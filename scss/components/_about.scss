@@ -16,7 +16,7 @@
         }
 
         &.stories{
-            @include flex($direction:column, $align:flex-start, $gap: 1em);
+            @include flex($direction:column, $align:flex-start, $gap: 2em);
 
             .story{
                 @include flex($direction:column, $align:flex-start, $gap: 1em);
@@ -56,7 +56,12 @@
                                     color: $color-gray5;
 
                                     &:hover{
-                                        color: $color-gray4;
+                                        color: $color-teal;
+                                        border-bottom: 1px solid $color-teal;
+
+                                        i{
+                                            color: $color-teal;
+                                        }
                                     }
                                 }
                             }
@@ -74,6 +79,10 @@
                 li{
                     list-style-type: disc;
                     margin-left: 1em;
+
+                    a:hover{
+                        border-bottom: 1px solid $color-red;
+                    }
                 }
             }
         }

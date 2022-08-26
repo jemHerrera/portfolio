@@ -96,11 +96,15 @@
                                 margin: 1em;
                                 font-size: 1.5rem;
                                 cursor: pointer;
+
+                                &:hover{
+                                    color: $color-teal;
+                                }
                             }
 
                             .head{
                                 @include flex($gap: 1em);
-                                padding-bottom: 3rem;
+                                padding: 0 3rem 3rem 3rem;
                                 border-bottom: 1px solid $color-gray2;
 
                                 img{
@@ -116,14 +120,26 @@
                                     }
                                     .cta-group{
                                         margin-top:0.5em;
-                                        @include flex($gap: 1em);
+                                        @include flex($gap: 1em, $align:center);
 
                                         a{
                                             background:none;
-                                            color: white;
+                                            color: $color-gray5;
                                             text-decoration: underline;
-                                            font-size: 0.8em;
                                             cursor: pointer;
+
+                                            i{
+                                                font-size: 0.9em;
+                                                text-decoration: underline;
+                                                color: $color-gray5;
+                                            }
+
+                                            &.icon-link{
+                                                i{
+                                                    font-size: 1em;
+                                                    text-decoration: none;
+                                                }
+                                            }
 
                                             &:hover{
                                                 color: $color-teal;
@@ -131,6 +147,12 @@
                                                     color: $color-teal;
                                                 }
                                             }
+                                        }
+
+                                        .separator{
+                                            align-self: stretch;
+                                            width: 1px;
+                                            background: $color-gray2;
                                         }
                                     }
                                 }

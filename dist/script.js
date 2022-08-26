@@ -58,3 +58,12 @@ function paintColorStrip(){
 
     strip.setAttribute('style', `background: linear-gradient(90deg, #00ffee, #00ffee, #2200fd, #f50e43, #f50e43 ${redPercent}%);`);
 }
+
+function show(selector){
+    let toBeDisplayed = document.querySelectorAll(selector);
+    toBeDisplayed.forEach(element => element.classList.remove('display-none'));
+}
+function hide(selector){
+    let toBeHidden = document.querySelectorAll(selector);
+    toBeHidden.forEach(element => element.classList.add('display-none'));
+}
