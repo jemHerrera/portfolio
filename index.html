@@ -1,10 +1,3 @@
-
-<!-- to do
-1. proofread and reduce content. double check all links
-2. design and ux clean-up 
-    - close project button to close to figma button on mobile
--->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,14 +11,14 @@
         <script defer src="./dist/script.js"></script>
     </head>
     <body>
-        <div id="color-strip"></div>
+        <div id="color-strip" aria-hidden="true"></div>
         <aside id="side-nav" class="side-nav">
-            <div class="links-container">
-                <a class="logo" href="#"><img src="./assets/pixelpfp.jpg" alt="" class="pfp"></a>
+            <nav class="links-container">
+                <a class="logo" href="#"><img src="./assets/pixelpfp.jpg" alt="profile picture used as logo" class="pfp"></a>
                 <a id="introduction-link" class="active" href="#introduction"></a>
                 <a id="projects-link" href="#projects"></a>
                 <a id="about-link" href="#about"></a>
-            </div>
+            </nav>
         </aside>
         <main>
             <section class="main-section" id="introduction">
@@ -57,8 +50,8 @@
                 </div>
                 <ul class="project-list">
                     <li id="scriddish" class="project">
-                        <div onclick="openProject('scriddish')" class="project-handle">
-                            <img src="./assets/scriddish/scriddish.png" alt="" class="project-logo">
+                        <button onclick="openProject('scriddish')" class="project-handle">
+                            <img src="./assets/scriddish/scriddish.png" alt="Scriddish logo" class="project-logo">
                             <div class="project-summary">
                                 <div class="project-title">
                                     <h3>Scriddish</h3>
@@ -66,22 +59,22 @@
                                 </div>
                                 <p class="project-description">Scriddish is a mobile web application for meal planning. The app allows user to select from a variety of recipes and save them.</p>
                             </div>
-                        </div>
+                        </button>
                         <div class="project-content">
                             <div class="project-content-inner">
-                                <div class="decorative-bar"></div>
+                                <div class="decorative-bar" aria-hidden="true"></div>
                                 <div class="head">
-                                    <img src="./assets/scriddish/scriddish.png" alt="" class="project-logo">
+                                    <img src="./assets/scriddish/scriddish.png" alt="Scriddish Logo" class="project-logo">
                                     <div class="title-group">
                                         <h2 class="title">Scriddish</h2>
                                         <div class="cta-group">
                                             <a target="_blank" href="https://jemherrera.github.io/scriddish/">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <div class="separator"></div>
+                                            <div class="separator" aria-hidden="true"></div>
                                             <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/scriddish"><i class="fa-brands fa-github"></i></a>
                                             <a class="icon-link" target="_blank" href="https://www.figma.com/file/J8uQpG1y6aDwIEaYTBmuwt/Scriddsh?node-id=403%3A282"><i class="fa-brands fa-figma"></i></a>
                                         </div>
                                     </div>
-                                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
                                 </div>
                                 <div class="body">
                                     <section class="about">
@@ -89,9 +82,9 @@
                                         <p><span class="color-red">Scriddish</span> is a single-page Front-End application built using Vue3. As someone who likes to cook at home, meal planning can consume a lot of time, effort and decision making. I built Scriddish not only as a portfolio project, but also as a tool to help me save time when planning meals.</span></p>
                                     </section>
                                     <section class="images">
-                                        <img src="./assets/scriddish//ss1.PNG" alt="">
-                                        <img src="./assets/scriddish//ss4.PNG" alt="">
-                                        <img src="./assets/scriddish//ss5.PNG" alt="">
+                                        <img src="./assets/scriddish//ss1.PNG" alt="Screenshot of Scriddish app on mobile, featuring the front page showing list of recipes">
+                                        <img src="./assets/scriddish//ss4.PNG" alt="Screenshot of Scriddish app on mobile, featuring the meal plan page">
+                                        <img src="./assets/scriddish//ss5.PNG" alt="Screenshot of Scriddish app on mobile, featuring the groceries page">
                                     </section>
                                     <section class="objectives">
                                         <h3>Features</h3>
@@ -110,34 +103,34 @@
                                     <a target="_blank" href="https://jemherrera.github.io/scriddish/" class="button-1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
-                            <div onclick="closeProjects()" class="project-background"></div>
+                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
                         </div>
                     </li>
 
                     <li id="dol" class="project">
-                        <div onclick="openProject('dol')" class="project-handle">
-                            <img src="./assets/dol/dol.png" alt="" class="project-logo">
+                        <button onclick="openProject('dol')" class="project-handle">
+                            <img src="./assets/dol/dol.png" alt="Doctor's Optical Lab logo" class="project-logo">
                             <div class="project-summary">
                                 <div class="project-title">
                                     <h3>Doctor's Optical Lab</h3>
                                 </div>
                                 <p class="project-description">DOL is a wholesaler of prescription lenses. My task was to build a custom Shopify theme with a prescription lens ordering app.</p>
                             </div>
-                        </div>
+                        </button>
                         <div class="project-content">
                             <div class="project-content-inner">
-                                <div class="decorative-bar"></div>
+                                <div class="decorative-bar" aria-hidden="true"></div>
                                 <div class="head">
-                                    <img src="./assets/dol/dol.png" alt="" class="project-logo">
+                                    <img src="./assets/dol/dol.png" alt="Doctor's Optical Lab logo" class="project-logo">
                                     <div class="title-group">
                                         <h2 class="title">Doctor's Optical Lab</h2>
                                         <div class="cta-group">
                                             <a href="https://doctorsopticallab.com/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <div class="separator"></div>
+                                            <div class="separator" aria-hidden="true"></div>
                                             <a class="icon-link" href="https://www.figma.com/file/iOWGnlDELbROZcalgUNFmA/DOL-Wireframes?node-id=0%3A1" target="_blank"><i class="fa-brands fa-figma"></i></a>
                                         </div>
                                     </div>
-                                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
                                 </div>
                                 <div class="body">
                                     <section class="about">
@@ -153,13 +146,13 @@
                                         <p>The most essential feature of this website is its ordering app. The client wanted to build the prescription selections in a two dimensional grid format, where the Y-axis corresponds to the Sphere power of the lens, while the X-axis corresponds to the Cylinder.</p>
                                     </section>
                                     <section class="image">
-                                        <img src="./assets/dol/ss1.png" alt="">
+                                        <img src="./assets/dol/ss1.png" alt="Screenshot of the Doctors’s Optical Lab Lens Ordering App, featuring the order grid">
                                     </section>
                                     <section class="note">
                                         <i class="color-gray3">Note: The Lens Ordering app is only available privately to company clients. If you wish to view it live, please feel free to contact me.</i>
                                     </section>
                                     <section class="image">
-                                        <img src="./assets/dol/ss2.png" alt="">
+                                        <img src="./assets/dol/ss2.png" alt="Screenshot of the Doctors’s Optical Lab Lens Ordering App, featuring the cart">
                                     </section>
                                     <section class="challenges">
                                         <h3>What I've learned</h3>
@@ -170,13 +163,13 @@
                                     <a href="https://doctorsopticallab.com/" target="_blank" class="button-1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
-                            <div onclick="closeProjects()" class="project-background"></div>
+                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
                         </div>
                     </li>
 
                     <li id="sense-of-neumor" class="project">
-                        <div onclick="openProject('sense-of-neumor')" class="project-handle">
-                            <img src="./assets/sense-of-neumor/sense-of-neumor.png" alt="" class="project-logo">
+                        <button onclick="openProject('sense-of-neumor')" class="project-handle">
+                            <img src="./assets/sense-of-neumor/sense-of-neumor.png" alt="Sense of Neumor logo" class="project-logo">
                             <div class="project-summary">
                                 <div class="project-title">
                                     <h3>Sense of Neumor</h3>
@@ -184,21 +177,21 @@
                                 </div>
                                 <p class="project-description">Sense of Neumor is a simple fun project. The goal is to showcase a dynamically rendered UI shadow based on a draggable light source.</p>
                             </div>
-                        </div>
+                        </button>
                         <div class="project-content">
                             <div class="project-content-inner">
-                                <div class="decorative-bar"></div>
+                                <div class="decorative-bar" aria-hidden="true"></div>
                                 <div class="head">
-                                    <img src="./assets/sense-of-neumor/sense-of-neumor.png" alt="" class="project-logo">
+                                    <img src="./assets/sense-of-neumor/sense-of-neumor.png" alt="Sense of Neumor logo" class="project-logo">
                                     <div class="title-group">
                                         <h2 class="title">Sense of Neumor</h2>
                                         <div class="cta-group">
                                             <a href="https://jemherrera.github.io/sense-of-neumor/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <div class="separator"></div>
+                                            <div class="separator" aria-hidden="true"></div>
                                             <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/sense-of-neumor"><i class="fa-brands fa-github"></i></a>
                                         </div>
                                     </div>
-                                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
                                 </div>
                                 <div class="body">
                                     <section class="about">
@@ -210,7 +203,7 @@
                                         <p>To take this to the next level, we can allow the user to drag a light source element across the screen, which would result in a change of the angle of the shadow. The process involves computation of the coordinates and angle of the light source relative to the subject element, and then converting the values into css box-shadow syntax.</p>
                                     </section>
                                     <section class="image">
-                                        <img src="./assets/sense-of-neumor/ss1.png" alt="">
+                                        <img src="./assets/sense-of-neumor/ss1.png" alt="Screenshot of Sense of Neumor project">
                                     </section>
                                     <section class="future-plans">
                                         <h3>Future Plans</h3>
@@ -219,32 +212,32 @@
                                     <a target="_blank" href="https://jemherrera.github.io/sense-of-neumor/" class="button-1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
-                            <div onclick="closeProjects()" class="project-background"></div>
+                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
                         </div>
                     </li>
 
                     <li id="sol-optix-online" class="project">
-                        <div onclick="openProject('sol-optix-online')" class="project-handle">
-                            <img src="./assets/sol/sol.png" alt="" class="project-logo">
+                        <button onclick="openProject('sol-optix-online')" class="project-handle">
+                            <img src="./assets/sol/sol.png" alt="Sol Optix Logo" class="project-logo">
                             <div class="project-summary">
                                 <div class="project-title">
                                     <h3>Sol Optix Online</h3>
                                 </div>
                                 <p class="project-description">Sol Optix Online is a beautiful website with visual simulations of different types of lenses.</p>
                             </div>
-                        </div>
+                        </button>
                         <div class="project-content">
                             <div class="project-content-inner">
-                                <div class="decorative-bar"></div>
+                                <div class="decorative-bar" aria-hidden="true"></div>
                                 <div class="head">
-                                    <img src="./assets/sol/sol.png" alt="" class="project-logo">
+                                    <img src="./assets/sol/sol.png" alt="Sol Optix Logo" class="project-logo">
                                     <div class="title-group">
                                         <h2 class="title">Sol Optix Online</h2>
                                         <div class="cta-group">
                                             <a href="https://soloptixonline.com/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </div>
                                     </div>
-                                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
                                 </div>
                                 <div class="body">
                                     <section class="about">
@@ -252,7 +245,7 @@
                                         <p><span class="color-red">Sol Optix</span> is an eyewear retail store based in Calgary, AB, Canada, offering eye health services like eye exams. I collaborated with a marketing manager and a graphic designer to create a visually pleasing website that represents the physical store.</span></p>
                                     </section>
                                     <section class="image">
-                                        <img src="./assets/sol/ss1.png" alt="">
+                                        <img src="./assets/sol/ss1.png" alt="Screenshot of Sol Optix Online homepage.">
                                     </section>
                                     <section class="marketing-and-design">
                                         <h3>Marketing and Design</h3>
@@ -263,36 +256,36 @@
                                         <p>Sol Optix is one of the sites where the team emphasized on presentation, branding and creative design. The website includes web-based visual simulators for different kinds of lenses, which can be accessed here. These simulators are currently being used as a marketing tool at the store level.</p>
                                     </section>
                                     <section class="image">
-                                        <img src="./assets/sol/ss2.png" alt="">
+                                        <img src="./assets/sol/ss2.png" alt="Screenshot of a lens simulator from the Sol Optix website">
                                     </section>
                                     <a href="https://soloptixonline.com/" class="button-1" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
-                            <div onclick="closeProjects()" class="project-background"></div>
+                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
                         </div>
                     </li>
                     <li id="eye-hub-warehouse" class="project">
-                        <div onclick="openProject('eye-hub-warehouse')" class="project-handle">
-                            <img src="./assets/ehw/ehw.png" alt="" class="project-logo">
+                        <button onclick="openProject('eye-hub-warehouse')" class="project-handle">
+                            <img src="./assets/ehw/ehw.png" alt="Eye Hub Warehouse Logo" class="project-logo">
                             <div class="project-summary">
                                 <div class="project-title">
                                     <h3>Eye Hub Warehouse</h3>
                                 </div>
                                 <p class="project-description">Eye Hub Warehouse is an e-commerce store that sells prescription eyeglasses and sunglasses online.</p>
                             </div>
-                        </div>
+                        </button>
                         <div class="project-content">
                             <div class="project-content-inner">
-                                <div class="decorative-bar"></div>
+                                <div class="decorative-bar" aria-hidden="true"></div>
                                 <div class="head">
-                                    <img src="./assets/ehw/ehw.png" alt="" class="project-logo">
+                                    <img src="./assets/ehw/ehw.png" alt="Eye Hub Warehouse Logo" class="project-logo">
                                     <div class="title-group">
                                         <h2 class="title">Eye Hub Warehouse</h2>
                                         <div class="cta-group">
                                             <a href="https://eyehubwarehouse.ca/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </div>
                                     </div>
-                                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
                                 </div>
                                 <div class="body">
                                     <section class="about">
@@ -300,7 +293,7 @@
                                         <p><span class="color-red">Eyehub Warehouse</span> is an e-commerce store selling prescription glasses online. I collaborated with a marketing manager and a graphic designer to build a site with focus on lead generation, marketing and sales.</p>
                                     </section>
                                     <section class="image">
-                                        <img src="./assets/ehw/ss1.png" alt="">
+                                        <img src="./assets/ehw/ss1.png" alt="Screenshot of Eye Hub Warehouse homepage">
                                     </section>
                                     <section class="marketing-and-design">
                                         <h3>Business Planning, Marketing and Design</h3>
@@ -311,7 +304,7 @@
                                         <p>One of the most essential features of this website is its ordering system for prescription lenses. Eye Hub Warehouse not only offers a wide variety of eyewear, but also allows customers to add custom prescription lenses.</p>
                                     </section>
                                     <section class="image">
-                                        <img src="./assets/ehw/ss2.png" alt="">
+                                        <img src="./assets/ehw/ss2.png" alt="Screenshot of the Eyehub Warehouse Lens Ordering System">
                                     </section>
                                     <section class="challenges">
                                         <h3>Challenges</h3>
@@ -320,12 +313,12 @@
                                     <a href="https://eyehubwarehouse.ca/" class="button-1" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
-                            <div onclick="closeProjects()" class="project-background"></div>
+                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
                         </div>
                     </li>
                     <li id="post-app" class="project">
-                        <div onclick="openProject('post-app')" class="project-handle">
-                            <img src="./assets/post/post.png" alt="" class="project-logo">
+                        <button onclick="openProject('post-app')" class="project-handle">
+                            <img src="./assets/post/post.png" alt="Post App logo" class="project-logo">
                             <div class="project-summary">
                                 <div class="project-title">
                                     <h3>Post App</h3>
@@ -333,23 +326,23 @@
                                 </div>
                                 <p class="project-description">Post app is another simple personal project where users can upload multiple images and text and post them to the news feed.</p>
                             </div>
-                        </div>
+                        </button>
                         <div class="project-content">
                             <div class="project-content-inner">
-                                <div class="decorative-bar"></div>
+                                <div class="decorative-bar" aria-hidden="true"></div>
                                 <div class="head">
-                                    <img src="./assets/post/post.png" alt="" class="project-logo">
+                                    <img src="./assets/post/post.png" alt="Post App logo" class="project-logo">
                                     <div class="title-group">
                                         <h2 class="title">Post App</h2>
                                         <p class="tags">HTML / SCSS / Javascript</p>
                                         <div class="cta-group">
                                             <a href="https://jemherrera.github.io/news-post-app/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <div class="separator"></div>
+                                            <div class="separator" aria-hidden="true"></div>
                                             <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/news-post-app"><i class="fa-brands fa-github"></i></a>
                                             <a class="icon-link" target="_blank" href="https://www.figma.com/file/ubkjHeHkAuyMJCBNsLHlMp/Mock-Posting-App?node-id=0%3A1"><i class="fa-brands fa-figma"></i></a>
                                         </div>
                                     </div>
-                                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
                                 </div>
                                 <div class="body">
                                     <section class="about">
@@ -357,9 +350,9 @@
                                         <p><span class="color-red">Post App</span> is a simple mock application for mobile. The objective is to create a news feed-style app where a user can create a post containing text and images, which will then be rendered into the news feed, much like social media feeds.</span></p>
                                     </section>
                                     <section class="images">
-                                        <img src="./assets/post/ss1.PNG" alt="">
-                                        <img src="./assets/post/ss2.PNG" alt="">
-                                        <img src="./assets/post/ss3.PNG" alt="">
+                                        <img src="./assets/post/ss1.PNG" alt="Screenshot from Post App, featuring the homepage">
+                                        <img src="./assets/post/ss2.PNG" alt="Screenshot from Post App, featuring the 'Create New Post' panel">
+                                        <img src="./assets/post/ss3.PNG" alt="Screenshot from Post App, featuring the news feed section">
                                     </section>
                                     <section class="objectives">
                                         <h3>Features</h3>
@@ -373,14 +366,14 @@
                                     <a href="https://jemherrera.github.io/news-post-app/" class="button-1" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                 </div>
                             </div>
-                            <div onclick="closeProjects()" class="project-background"></div>
+                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
                         </div>
                     </li>
                 </ul>
             </section>
             <section class="main-section" id="about">
                 <div class="title">
-                    <img src="./assets/pixelpfp.jpg" alt="" class="pfp">
+                    <img src="./assets/pixelpfp.jpg" alt="My profile picture, showing a self pixel art portrait" class="pfp">
                     <h2>About Me</h2>
                     <p class="color-gray3">I’m a self-taught web developer specializing in Javascript, Vue and Shopify Theme Development.</p>
                 </div>
@@ -388,8 +381,6 @@
                     <div id="story-experience" class="story">
                         <h3>Experience</h3>
                         <p>My work experience comes solely from Eylence Group, an eyewear conglomerate. After self-studying for 6 months in 2018, I was hired as their web developer to work alongside with a marketing manager and a graphic designer. My responsibility as the web developer is to be in charge of the whole dev process in building ecommerce sites. It was a perfect opportunity for me to learn and grow as a Junior developer. From the experience I became accustomed to using Shopify API, mainly through manipulation of product data and creatively presenting them in the Front-end.</p>
-                        <!-- <p class="more display-none">One of the challenges that I encountered in this experience is the absense of a senior developer to teach me the ropes, or another developer to brainstorm and compare work with. Although this gives me a lot of freedom to be creative, I had to be careful to get the habit of keeping my code as clean and as maintainable as possible. I needed to keep the balance between learning and production, as well as keep up with the updates in technologies and modern coding techniques. From the experience I became accustomed to using Shopify API, mainly manipulating product data and presenting them in the front-end in various creative ways.</p>
-                        <p class="more display-none">I currently work as a freelance dev for the same company, but is also looking for full-time opportunities. Since all the years of my experience I’ve only worked as the lone developer, I also would love to experience working with other developers to further grow my technical and communication skills. Despite the experience I consider myself still a beginner in the field, as there’s so much more to grasp and be proficient with.</p> -->
                     </div>
                     <div id="story-skills" class="story">
                         <h3>Skills</h3>

@@ -42,6 +42,10 @@ h3 {
   font-weight: 700;
 }
 
+button:focus, a:focus {
+  outline: 2px solid #00ffee;
+}
+
 .color-red {
   color: #f50e43;
 }
@@ -236,6 +240,7 @@ body.overflow-hidden {
 #projects > *.project-list .project .project-handle .project-summary .project-description {
   font-size: 0.8em;
   color: #b7b5c4;
+  text-align: left;
 }
 #projects > *.project-list .project .project-content {
   opacity: 0;
@@ -280,15 +285,17 @@ body.overflow-hidden {
   top: 0;
   left: 0;
 }
-#projects > *.project-list .project .project-content.active .project-content-inner .fa-xmark {
+#projects > *.project-list .project .project-content.active .project-content-inner .close-button {
   position: absolute;
   top: 0;
   right: 0;
   margin: 1em;
-  font-size: 1.5rem;
-  cursor: pointer;
+  background: none;
 }
-#projects > *.project-list .project .project-content.active .project-content-inner .fa-xmark:hover {
+#projects > *.project-list .project .project-content.active .project-content-inner .close-button .fa-xmark {
+  font-size: 1.5rem;
+}
+#projects > *.project-list .project .project-content.active .project-content-inner .close-button .fa-xmark:hover {
   color: #00ffee;
 }
 #projects > *.project-list .project .project-content.active .project-content-inner .head {
@@ -452,7 +459,7 @@ body.overflow-hidden {
   #projects > *.project-list .project .project-content.active .project-content-inner .head .title-group .tags {
     display: none;
   }
-  #projects > *.project-list .project .project-content.active .project-content-inner .fa-xmark {
+  #projects > *.project-list .project .project-content.active .project-content-inner .close-button {
     margin: 0.5em;
   }
   #projects > *.project-list .project .project-content.active .project-content-inner .body section {

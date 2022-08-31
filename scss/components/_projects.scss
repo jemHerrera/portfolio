@@ -45,6 +45,7 @@
                         .project-description{
                             font-size: 0.8em;
                             color: $color-gray5;
+                            text-align: left;
                         }
                     }    
                 }
@@ -89,16 +90,19 @@
                                 left: 0;
                             }
 
-                            .fa-xmark{
+                            .close-button{
                                 position: absolute;
                                 top:0;
                                 right: 0;
                                 margin: 1em;
-                                font-size: 1.5rem;
-                                cursor: pointer;
+                                background: none;
 
-                                &:hover{
-                                    color: $color-teal;
+                                .fa-xmark{
+                                    font-size: 1.5rem;
+    
+                                    &:hover{
+                                        color: $color-teal;
+                                    }
                                 }
                             }
 
@@ -279,7 +283,7 @@
                                     }
                                 }
 
-                                .fa-xmark{
+                                .close-button{
                                     margin: 0.5em;
                                 }
 
