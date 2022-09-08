@@ -212,6 +212,10 @@ body.overflow-hidden {
   background-color: #292734;
   border: 1px solid #9189C7;
 }
+#projects > *.project-list .project .project-handle:hover .project-summary .see-more {
+  color: #00ffee;
+  border-bottom: 1px solid #00ffee;
+}
 #projects > *.project-list .project .project-handle img {
   height: 5em;
   width: 5em;
@@ -238,9 +242,17 @@ body.overflow-hidden {
   color: #00ffee;
 }
 #projects > *.project-list .project .project-handle .project-summary .project-description {
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #b7b5c4;
   text-align: left;
+}
+#projects > *.project-list .project .project-handle .project-summary .see-more {
+  align-self: flex-start;
+  font-size: 0.9em;
+  color: #b7b5c4;
+  text-align: left;
+  font-style: italic;
+  border-bottom: 1px solid #b7b5c4;
 }
 #projects > *.project-list .project .project-content {
   opacity: 0;
@@ -258,7 +270,7 @@ body.overflow-hidden {
   align-items: center;
   justify-content: flex-start;
   gap: 0;
-  padding-top: 10rem;
+  padding-top: 2.5rem;
   opacity: 1;
   pointer-events: auto;
   cursor: default;
@@ -291,6 +303,7 @@ body.overflow-hidden {
   right: 0;
   margin: 1em;
   background: none;
+  cursor: pointer;
 }
 #projects > *.project-list .project .project-content.active .project-content-inner .close-button .fa-xmark {
   font-size: 1.5rem;

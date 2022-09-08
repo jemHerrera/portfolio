@@ -21,6 +21,13 @@
                     &:hover{
                         background-color: $color-gray2;
                         border: 1px solid $color-gray4;
+
+                        .project-summary{
+                            .see-more{
+                                color: $color-teal;
+                                border-bottom: 1px solid $color-teal;
+                            }
+                        }
                     }
     
                     img{
@@ -43,9 +50,18 @@
                             }
                         }
                         .project-description{
-                            font-size: 0.8em;
+                            font-size: 0.9em;
                             color: $color-gray5;
                             text-align: left;
+                        }
+
+                        .see-more{
+                            align-self: flex-start;
+                            font-size: 0.9em;
+                            color: $color-gray5;
+                            text-align: left;
+                            font-style: italic;
+                            border-bottom: 1px solid $color-gray5;
                         }
                     }    
                 }
@@ -62,7 +78,7 @@
 
                     &.active{
                         @include flex($direction:column, $align:center, $justify:flex-start);
-                        padding-top: 10rem;
+                        padding-top: 2.5rem;
                         opacity:1;
                         pointer-events: auto;
                         cursor: default;
@@ -96,6 +112,7 @@
                                 right: 0;
                                 margin: 1em;
                                 background: none;
+                                cursor: pointer;
 
                                 .fa-xmark{
                                     font-size: 1.5rem;
