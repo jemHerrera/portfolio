@@ -7,6 +7,12 @@
     >div{
         @include flex($direction:column, $align:flex-start, $gap: 1.5em);
 
+        &.content{
+            p{
+                color: $color-gray5;
+                line-height: 1.5;
+            }
+        }
         &.cta{
             .socials{
                 @include flex($gap: 1.25em);

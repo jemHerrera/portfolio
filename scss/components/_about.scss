@@ -23,6 +23,22 @@
 
                 p{
                     color: $color-gray5;
+                    line-height: 1.5;
+
+                    a{
+                        font-style: italic;
+
+                        .color-teal{
+                            &:hover{
+                                border-bottom: 1px solid $color-teal;
+                            }
+                        }
+                        .color-red{
+                            &:hover{
+                                border-bottom: 1px solid $color-red;
+                            }
+                        }
+                    }
                 }
             }
         }

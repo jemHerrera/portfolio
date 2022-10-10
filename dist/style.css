@@ -159,6 +159,10 @@ body.overflow-hidden {
   justify-content: flex-start;
   gap: 1.5em;
 }
+#introduction > div.content p {
+  color: #b7b5c4;
+  line-height: 1.5;
+}
 #introduction > div.cta .socials {
   display: flex;
   flex-direction: row;
@@ -532,6 +536,16 @@ body.overflow-hidden {
 }
 #about > *.stories .story p {
   color: #b7b5c4;
+  line-height: 1.5;
+}
+#about > *.stories .story p a {
+  font-style: italic;
+}
+#about > *.stories .story p a .color-teal:hover {
+  border-bottom: 1px solid #00ffee;
+}
+#about > *.stories .story p a .color-red:hover {
+  border-bottom: 1px solid #f50e43;
 }
 #about > *.work-experience {
   display: flex;
