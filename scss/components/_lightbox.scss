@@ -1,0 +1,40 @@
+@use '../abstracts/index' as *;
+
+
+#lightbox{
+    @include flex($direction: column, $align:center, $justify:flex-start);
+    position: fixed; 
+    z-index: 999;
+    top: 0; 
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    padding: 4rem 0;
+    background: $popup-background;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity ease 0.25s;
+    overflow: auto;
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+
+    &.show{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    img{
+        max-width: 1200px;
+        width: 100%;
+    }
+}
+
+.zoomable{
+   cursor: -webkit-zoom-in;
+   cursor: zoom-in;
+   transition: transform ease-in-out 0.3s;
+
+   &:hover{
+    transform: scale(1.03);
+   }
+}

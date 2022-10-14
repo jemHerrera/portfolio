@@ -34,7 +34,7 @@ body{
         }
     }
     
-    &.overflow-hidden{
+    &.overflow-hidden, &.freeze{
         overflow: hidden;
     }
 }

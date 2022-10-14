@@ -5,7 +5,36 @@ window.addEventListener('hashchange', (event) => {
     openProject(hash);
 })
 
-window.addEventListener('scroll', activateScrollEvents)
+window.addEventListener('scroll', activateScrollEvents);
+initializeZoomable();
+
+// FUNCTIONS
+function initializeZoomable(){
+    // GET LIGHTBOX & ALL ZOOMABLE IMAGES
+    let allZoomable = document.getElementsByClassName("zoomable"),
+        lightbox = document.getElementById("lightbox");
+ 
+    // CLICK TO SHOW IMAGE IN LIGHTBOX
+    // * SIMPLY CLONE INTO LIGHTBOX & SHOW
+    if (allZoomable.length > 0) {
+        for (let image of allZoomable) {
+            image.onclick = () => {
+                let clone = image.cloneNode();
+                clone.className = "";
+                lightbox.innerHTML = "";
+                lightbox.appendChild(clone);
+                lightbox.className = "show";
+                document.querySelector('body').classList.add('freeze');
+            };
+        }
+    }
+ 
+    // CLICK TO CLOSE LIGHTBOX
+    lightbox.onclick = () => {
+        lightbox.className = "";
+        document.querySelector('body').classList.remove('freeze');
+    }
+}
 
 function closeProjects(){
     let projectContents = document.querySelectorAll('.project-content');

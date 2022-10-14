@@ -140,7 +140,7 @@ body main > section {
     width: 100%;
   }
 }
-body.overflow-hidden {
+body.overflow-hidden, body.freeze {
   overflow: hidden;
 }
 
@@ -547,6 +547,10 @@ body.overflow-hidden {
 #about > *.stories .story p a .color-red:hover {
   border-bottom: 1px solid #f50e43;
 }
+#about > *.stories .story #skill-map {
+  width: 100%;
+  margin: 2rem 0;
+}
 #about > *.work-experience {
   display: flex;
   flex-direction: column;
@@ -737,4 +741,41 @@ body.overflow-hidden {
   .side-nav .links-container a.logo img {
     height: 100%;
   }
+}
+
+#lightbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem 0;
+  background: rgba(29, 25, 54, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity ease 0.25s;
+  overflow: auto;
+  cursor: zoom-out;
+}
+#lightbox.show {
+  visibility: visible;
+  opacity: 1;
+}
+#lightbox img {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.zoomable {
+  cursor: zoom-in;
+  transition: transform ease-in-out 0.3s;
+}
+.zoomable:hover {
+  transform: scale(1.03);
 }/*# sourceMappingURL=style.css.map */
