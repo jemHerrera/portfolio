@@ -549,7 +549,12 @@ body.overflow-hidden, body.freeze {
 }
 #about > *.stories .story #skill-map {
   width: 100%;
+  max-height: 300px;
   margin: 2rem 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 #about > *.work-experience {
   display: flex;
