@@ -418,6 +418,9 @@ body.overflow-hidden, body.freeze {
   padding: 0;
   display: block;
 }
+#projects > *.project-list .project .project-content.active .project-content-inner .body section.video * {
+  width: 100%;
+}
 #projects > *.project-list .project .project-content.active .project-content-inner .body .button-1 {
   align-self: flex-start;
   margin: 0 3rem;
