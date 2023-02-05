@@ -58,6 +58,7 @@
             padding: 4rem 0;
 
             .experience-list{
+                @include flex($direction: column, $gap:2rem);
                 width: 100%;
 
                 .experience{
@@ -89,6 +90,14 @@
                                     }
                                 }
                             }
+                        }
+                    }
+
+                    .position-and-date{
+                        @include flex($direction: column, $align:flex-end);
+
+                        .position, .date{
+                            text-align: left;
                         }
                     }
                 }

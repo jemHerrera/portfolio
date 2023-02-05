@@ -574,6 +574,11 @@ body.overflow-hidden, body.freeze {
   padding: 4rem 0;
 }
 #about > *.work-experience .experience-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 2rem;
   width: 100%;
 }
 #about > *.work-experience .experience-list .experience {
@@ -613,6 +618,16 @@ body.overflow-hidden, body.freeze {
 }
 #about > *.work-experience .experience-list .experience .details .project-list li a:hover i, #about > *.work-experience .experience-list .experience .details .project-list li a > i:hover i {
   color: #00ffee;
+}
+#about > *.work-experience .experience-list .experience .position-and-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 0;
+}
+#about > *.work-experience .experience-list .experience .position-and-date .position, #about > *.work-experience .experience-list .experience .position-and-date .date {
+  text-align: left;
 }
 #about > *.about-this-site ul {
   display: flex;
