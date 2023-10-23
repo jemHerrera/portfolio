@@ -1,596 +1,837 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jem Herrera</title>
-        <link rel="icon" type="image/x-icon" href="./assets/pixelpfp.jpg">
-        <link rel="stylesheet" href="./dist/style.css">
-        <script src="https://kit.fontawesome.com/b25b64552f.js" crossorigin="anonymous"></script>
-        <script defer src="./dist/script.js"></script>
-    </head>
-    <body>
-        <div id="color-strip" aria-hidden="true"></div>
-        <aside id="side-nav" class="side-nav">
-            <nav class="links-container">
-                <a class="logo" href="#"><img src="./assets/pixelpfp.jpg" alt="profile picture used as logo" class="pfp"></a>
-                <a id="introduction-link" class="active" href="#introduction"></a>
-                <a id="projects-link" href="#projects"></a>
-                <a id="about-link" href="#about"></a>
-            </nav>
-        </aside>
-        <main>
-            <section class="main-section" id="introduction">
-                <div class="title">
-                    <h1>
-                        Hi! My name is
-                        <span class="color-red">Jem</span>,
-                        <span class="color-teal">Web Developer.</span>
-                    </h1>
-                    <p class="color-gray3">Vue3 / JavaScript / HTML / SCSS</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jem Herrera</title>
+    <link rel="icon" type="image/x-icon" href="./assets/pixelpfp.jpg" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <script
+      src="https://kit.fontawesome.com/b25b64552f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./dist/script.js"></script>
+  </head>
+  <body>
+    <div id="color-strip" aria-hidden="true"></div>
+    <aside id="side-nav" class="side-nav">
+      <nav class="links-container">
+        <a class="logo" href="#"
+          ><img
+            src="./assets/pixelpfp2.jpg"
+            alt="profile picture used as logo"
+            class="pfp"
+        /></a>
+        <a id="introduction-link" class="active" href="#introduction"></a>
+        <a id="experience-link" href="#experience"></a>
+        <a id="projects-link" href="#projects"></a>
+      </nav>
+    </aside>
+    <main>
+      <section class="main-section" id="introduction">
+        <div class="title">
+          <img
+            class="pic"
+            src="./assets/pixelpfp.jpg"
+            alt="My profile picture, showing a self pixel art portrait"
+            class="pfp"
+          />
+          <h1>
+            Hi! I'm
+            <span class="color-teal">Jem</span>.
+          </h1>
+          <div class="content">
+            <p>
+              I am a web developer who's had a taste of TypeScript and can't go
+              back to JavaScript anymore. My current interest lie in AI and its
+              power to supercharge everything of this realm.
+            </p>
+          </div>
+          <p class="color-gray3">
+            I'm also into Japan, graphic art and martial arts.
+          </p>
+          <div class="cta">
+            <div class="socials">
+              <a href="https://github.com/jemHerrera"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/jemherrera/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/sinchemy_art/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-section" id="experience">
+        <div class="title">
+          <h2>Experience</h2>
+        </div>
+        <ul class="experience-list">
+          <li id="motiv" class="experience">
+            <h3 class="title">Motiv</h3>
+            <div class="position-and-date">
+              <p class="position color-gray3">Frontend Developer</p>
+              <p class="date color-gray3">2023 - Present</p>
+            </div>
+            <p class="about">
+              In my role at Motiv, my responsibilities revoled around developing
+              client websites. I developed Front-end components using Vue, set
+              up the backend with Strapi, and connected it all using GraphQL
+              API. Later, I shifted to backend development, working on features
+              like user accounts and team management. I used tRPC and MikroOrm,
+              building the entire backend using TypeScript.
+            </p>
+            <div class="projects">
+              <h4 class="projects-title">Projects</h4>
+              <ul class="project-list">
+                <li class="project" id="project-common-future">
+                  <a
+                    href="https://www.commonfuture.co/"
+                    target="_blank"
+                    class="color-teal--hover"
+                    >Common Future
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+                <li class="project" id="project-ccbc">
+                  <a
+                    href="https://bookcentre.ca/"
+                    target="_blank"
+                    class="color-teal--hover"
+                    >The Canadian Children's Book Centre
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+                <li class="project" id="project-profoundry">
+                  <a
+                    href="https://profoundry.ca/"
+                    target="_blank"
+                    class="color-teal--hover"
+                    >Profoundry
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li id="eylence" class="experience">
+            <h3 class="title">Eylence Group</h3>
+            <div class="position-and-date">
+              <p class="position color-gray3">Web Developer</p>
+              <p class="date color-gray3">2018 - 2022</p>
+            </div>
+            <p class="about">
+              At Eylence, I worked as an in-house developer building ecommerce
+              websites for eye-wear companies. This is where I learned my
+              foundations in web-development.
+            </p>
+            <h4 class="projects-title">Projects</h4>
+            <ul class="project-list">
+              <li class="project" id="project-dol">
+                <a
+                  href="https://doctorsopticallab.com/"
+                  target="_blank"
+                  class="color-teal--hover"
+                  >Doctor's Optical Lab
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </li>
+              <li class="project" id="project-sol">
+                <a
+                  href="https://soloptixonline.com/"
+                  target="_blank"
+                  class="color-teal--hover"
+                  >Sol Optix Online
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </li>
+              <li class="project" id="project-eyehub">
+                <a
+                  href="https://eyehubwarehouse.ca/"
+                  target="_blank"
+                  class="color-teal--hover"
+                  >Eyehub Warehouse
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <a
+          class="resume button-1"
+          href="https://github.com/jemHerrera/portfolio/blob/master/assets/Resume.pdf"
+          target="_blank"
+          >View Resume <i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
+      </section>
+
+      <section class="main-section" id="projects">
+        <div class="title">
+          <h2>Personal Projects</h2>
+          <p class="color-gray3">A collection of my personal work.</p>
+        </div>
+        <ul class="project-list">
+          <li id="scriddish" class="project">
+            <button onclick="openProject('scriddish')" class="project-handle">
+              <img
+                src="./assets/scriddish/scriddish.png"
+                alt="Scriddish logo"
+                class="project-logo"
+              />
+              <div class="project-summary">
+                <div class="project-title">
+                  <h3>Scriddish</h3>
+                  <span class="personal-project">Personal Project</span>
                 </div>
-                <div class="content">
-                    <p>I am a Front-End developer with 4 years of experience in prototyping, designing and developing web projects. I have accumulated expertise in using Vue3 to implement UI in a component-based programming model.</p>
-                    <p>I'm currently looking for full-time Front-End developer positions.</p>
-                </div>
-                <div class="cta">
-                    <a class="button-1" class="contact" href="mailto:jhneramuz@gmail.com">Contact Me!</a>
-                    <div class="socials">
-                        <a href="https://github.com/jemHerrera"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/jemherrera/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/sinchemy_art/"><i class="fa-brands fa-instagram"></i></a>
+                <p class="project-description">
+                  Scriddish is a mobile web application for meal planning. The
+                  app allows user to select from a variety of recipes and save
+                  them.
+                </p>
+                <p class="see-more">See More</p>
+              </div>
+            </button>
+            <div class="project-content">
+              <div class="project-content-inner">
+                <div class="decorative-bar" aria-hidden="true"></div>
+                <div class="head">
+                  <img
+                    src="./assets/scriddish/scriddish.png"
+                    alt="Scriddish Logo"
+                    class="project-logo"
+                  />
+                  <div class="title-group">
+                    <h2 class="title">Scriddish</h2>
+                    <p class="tags">Vue3 / Pinia / Vue Router / SCSS</p>
+                    <div class="cta-group">
+                      <a
+                        target="_blank"
+                        href="https://jemherrera.github.io/scriddish/"
+                        >View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                      <div class="separator" aria-hidden="true"></div>
+                      <a
+                        class="icon-link"
+                        target="_blank"
+                        href="https://github.com/jemHerrera/scriddish"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                      <a
+                        class="icon-link"
+                        target="_blank"
+                        href="https://www.figma.com/file/J8uQpG1y6aDwIEaYTBmuwt/Scriddsh?node-id=403%3A282"
+                        ><i class="fa-brands fa-figma"></i
+                      ></a>
                     </div>
+                  </div>
+                  <button class="close-button">
+                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                  </button>
                 </div>
-            </section>
-            <section class="main-section" id="projects">
-                <div class="title">
-                    <h2>Projects</h2>
-                    <p class="color-gray3">A collection of my commercial and personal work.</p>
-                </div>
-                <ul class="project-list">
-                    <li id="scriddish" class="project">
-                        <button onclick="openProject('scriddish')" class="project-handle">
-                            <img src="./assets/scriddish/scriddish.png" alt="Scriddish logo" class="project-logo">
-                            <div class="project-summary">
-                                <div class="project-title">
-                                    <h3>Scriddish</h3>
-                                    <span class="personal-project">Personal Project</span>
-                                </div>
-                                <p class="project-description">Scriddish is a mobile web application for meal planning. The app allows user to select from a variety of recipes and save them.</p>
-                                <p class="see-more">See More</p>
-                            </div>
-                        </button>
-                        <div class="project-content">
-                            <div class="project-content-inner">
-                                <div class="decorative-bar" aria-hidden="true"></div>
-                                <div class="head">
-                                    <img src="./assets/scriddish/scriddish.png" alt="Scriddish Logo" class="project-logo">
-                                    <div class="title-group">
-                                        <h2 class="title">Scriddish</h2>
-                                        <p class="tags">Vue3 / Pinia / Vue Router / SCSS</p>
-                                        <div class="cta-group">
-                                            <a target="_blank" href="https://jemherrera.github.io/scriddish/">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <div class="separator" aria-hidden="true"></div>
-                                            <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/scriddish"><i class="fa-brands fa-github"></i></a>
-                                            <a class="icon-link" target="_blank" href="https://www.figma.com/file/J8uQpG1y6aDwIEaYTBmuwt/Scriddsh?node-id=403%3A282"><i class="fa-brands fa-figma"></i></a>
-                                        </div>
-                                    </div>
-                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
-                                </div>
-                                <div class="body">
-                                    <section class="about">
-                                        <h3>About Scriddish</h3>
-                                        <p><span class="color-red">Scriddish</span> is a single-page Front-End application built using Vue3. As someone who likes to cook at home, meal planning can consume a lot of time, effort and decision making. I built Scriddish not only as a portfolio project, but also as a tool to help me save time when planning meals.</span></p>
-                                    </section>
-                                    <section class="images">
-                                        <img class="zoomable" src="./assets/scriddish//ss1.PNG" alt="Screenshot of Scriddish app on mobile, featuring the front page showing list of recipes">
-                                        <img class="zoomable" src="./assets/scriddish//ss4.PNG" alt="Screenshot of Scriddish app on mobile, featuring the meal plan page">
-                                        <img class="zoomable" src="./assets/scriddish//ss5.PNG" alt="Screenshot of Scriddish app on mobile, featuring the groceries page">
-                                    </section>
-                                    <section class="objectives">
-                                        <h3>Features</h3>
-                                        <p>The following are the main features of the app:</p>
-                                        <ul>
-                                            <li>Choose from a list of recipes and add them to a meal plan</li>
-                                            <li>Create a sorted list of ingredients based on the selected recipes</li>
-                                            <li>Search a recipe by name or ingredient</li>
-                                            <li>View a recipe’s cooking instructions</li>
-                                        </ul>
-                                    </section>
-                                    <section class="future-plans">
-                                        <h3>Future Plans</h3>
-                                        <p>For the next phase of the project, I am planning to improve the overall design and UX, as well as include user features, where accounts can be created. Each individual account can contribute by creating their own recipes, much like Github but for food recipes.</p>
-                                    </section>
-                                    <a target="_blank" href="https://jemherrera.github.io/scriddish/" class="button-1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
-                        </div>
-                    </li>
-
-                    <li id="blackjack" class="project">
-                        <button onclick="openProject('blackjack')" class="project-handle">
-                            <img src="./assets/blackjack/chip-vue.png" alt="Vue chip logo" class="project-logo">
-                            <div class="project-summary">
-                                <div class="project-title">
-                                    <h3>Blackjack with Vue</h3>
-                                    <span class="personal-project">Personal Project</span>
-                                </div>
-                                <p class="project-description">A game of Blackjack in the browser. Powered by VueJs and DeckofCards API.</p>
-                                <p class="see-more">See More</p>
-                            </div>
-                        </button>
-                        <div class="project-content">
-                            <div class="project-content-inner">
-                                <div class="decorative-bar" aria-hidden="true"></div>
-                                <div class="head">
-                                    <img src="./assets/blackjack/chip-vue.png" alt="Vue chip logo" class="project-logo">
-                                    <div class="title-group">
-                                        <h2 class="title">Blackjack with Vue</h2>
-                                        <p class="tags">Vue3</p>
-                                        <div class="cta-group">
-                                            <a target="_blank" href="https://jemherrera.github.io/blackjack-game/">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <div class="separator" aria-hidden="true"></div>
-                                            <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/blackjack-game"><i class="fa-brands fa-github"></i></a>
-                                        </div>
-                                    </div>
-                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
-                                </div>
-                                <div class="body">
-                                    <section class="about">
-                                        <h3>About BlackJack Game</h3>
-                                        <p><span class="color-red">Blackjack</span> is a game generally played in the Casino using the standard deck of cards. Also known as Twenty one, the objective of the player is to win money by creating card totals higher than those of the dealer's hand but not bust(exceed 21), or by stopping at a total in the hope that the dealer will bust.</p>
-                                    </section>
-                                    <section class="objectives">
-                                        <h3>Features</h3>
-                                        <p>The following are the main features of the app:</p>
-                                        <ul>
-                                            <li>Hit, Stand and Double-down player actions.</li>
-                                            <li>Smooth animations for a more ergonomic playing experience</li>
-                                            <li>Available in all screen sizes, including tablet and mobile</li>
-                                        </ul>
-                                    </section>
-                                    <section class="future-plans">
-                                        <h3>Future Plans</h3>
-                                        <p>For the next phase of the project, I am planning to include the split action. Split is somewhat more complex that it creates another player entity that has its own hit, stand or double-down actions.</p>
-                                    </section>
-                                    <a target="_blank" href="https://jemherrera.github.io/blackjack-game/" class="button-1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
-                        </div>
-                    </li>
-
-                    <li id="dol" class="project">
-                        <button onclick="openProject('dol')" class="project-handle">
-                            <img src="./assets/dol/dol.png" alt="Doctor's Optical Lab logo" class="project-logo">
-                            <div class="project-summary">
-                                <div class="project-title">
-                                    <h3>Doctor's Optical Lab</h3>
-                                </div>
-                                <p class="project-description">DOL is a wholesaler of prescription lenses. My task was to build a custom Shopify theme with a prescription lens ordering app.</p>
-                                <p class="see-more">See More</p>
-                            </div>
-                        </button>
-                        <div class="project-content">
-                            <div class="project-content-inner">
-                                <div class="decorative-bar" aria-hidden="true"></div>
-                                <div class="head">
-                                    <img src="./assets/dol/dol.png" alt="Doctor's Optical Lab logo" class="project-logo">
-                                    <div class="title-group">
-                                        <h2 class="title">Doctor's Optical Lab</h2>
-                                        <p class="tags">Liquid / Vue / Vue Router / SCSS / Gulp</p>
-                                        <div class="cta-group">
-                                            <a href="https://doctorsopticallab.com/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                        </div>
-                                    </div>
-                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
-                                </div>
-                                <div class="body">
-                                    <section class="about">
-                                        <h3>About Doctor's Optical Lab</h3>
-                                        <p><span class="color-red">Doctors’s Optical Lab</span> is a business-to-business wholesaler, offering prescription lenses to local eyewear retailers. I collaborated with a marketing manager and a graphic designer to create an e-commerce site where clients can easily order lenses online.</p>
-                                    </section>
-                                    <section class="marketing-and-design">
-                                        <h3>Marketing and Branding</h3>
-                                        <p>There are overlapping tasks we shared among the team members. From the experience I had the opportunity to be involved in other fields such as design, branding and marketing.</p>
-                                    </section>
-                                    <section class="lens-app">
-                                        <h3>The Lens Ordering App</h3>
-                                        <p>The most essential feature of this website is its ordering app. The client wanted to build the prescription selections in a two dimensional grid format, where the Y-axis corresponds to the Sphere power of the lens, while the X-axis corresponds to the Cylinder.</p>
-                                    </section>
-                                    <section class="note">
-                                        <i class="color-gray3">Note: The Lens Ordering app is only available privately to company clients, so I made a video walking through the application. If you wish to view it live, please feel free to contact me.</i>
-                                    </section>
-                                    <section class="video">
-                                        <iframe height="315" src="https://www.youtube.com/embed/VP6FUJxXIuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </section>
-                                    <section class="challenges">
-                                        <h3>What I've learned</h3>
-                                        <p>As my first ever developer job, I had to learn the ropes on my own while keeping productivity. At times when I did not have a solid solution to a problem, I had to map out all the possible solutions, and explore them one by one. Although this approach takes a lot of time, this process helped me grow as a developer.</p>
-                                        <p>From this project I have learned the ins and outs of Shopify, as well as how to use a combination of VueJs, Shopify’s AJAX API and Liquid(Shopify’s templating language) to effectively display thousands of lens products in a single web page without affecting the loading times.</p>
-                                        <p>From this project I also improved my design and UX skills. On top of the development I was also tasked to ensure that the UI is intuitive to use and visually pleasing.</p>
-                                    </section>
-                                    <a href="https://doctorsopticallab.com/" target="_blank" class="button-1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
-                        </div>
-                    </li>
-
-                    <li id="drum-machine" class="project">
-                        <button onclick="openProject('drum-machine')" class="project-handle">
-                            <img src="./assets/drum-machine/drum-machine.png" alt="Drum Machine logo" class="project-logo">
-                            <div class="project-summary">
-                                <div class="project-title">
-                                    <h3>Drum Machine</h3>
-                                    <span class="personal-project">Personal Project</span>
-                                </div>
-                                <p class="project-description">Drum Machine is a simple personal project made using React JS.</p>
-                                <p class="see-more">See More</p>
-                            </div>
-                        </button>
-                        <div class="project-content">
-                            <div class="project-content-inner">
-                                <div class="decorative-bar" aria-hidden="true"></div>
-                                <div class="head">
-                                    <img src="./assets/drum-machine/drum-machine.png" alt="Drum Machine logo" class="project-logo">
-                                    <div class="title-group">
-                                        <h2 class="title">Drum Machine</h2>
-                                        <p class="tags">React / SCSS</p>
-                                        <div class="cta-group">
-                                            <a href="https://jemherrera.github.io/drum-machine/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <div class="separator" aria-hidden="true"></div>
-                                            <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/drum-machine"><i class="fa-brands fa-github"></i></a>
-                                        </div>
-                                    </div>
-                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
-                                </div>
-                                <div class="body">
-                                    <section class="about">
-                                        <h3>About Drum Machine</h3>
-                                        <p><span class="color-red">Drum Machine</span> is a simple project that I built while learning React.js. Drum Machine is one of the requirement projects in freeCodeCamp's course "Front End Development Libraries". The project features 9 drum pads, each representing a keyboard key that when pressed, triggers an audio clip.</span></p>
-                                    </section>
-
-                                    <section class="design">
-                                        <h3>The Design</h3>
-                                        <p>The design is Retro inspired, featuring glowing pink and blue neon colors on a dark purpleish background. I played around with CSS's transform skew and box shadow properties attempting to create a nice 3D effect.</p>
-                                    </section>
-                                    <a href="https://jemherrera.github.io/drum-machine/" class="button-1" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
-                        </div>
-                    </li>
-
-                    <li id="sol-optix-online" class="project">
-                        <button onclick="openProject('sol-optix-online')" class="project-handle">
-                            <img src="./assets/sol/sol.png" alt="Sol Optix Logo" class="project-logo">
-                            <div class="project-summary">
-                                <div class="project-title">
-                                    <h3>Sol Optix Online</h3>
-                                </div>
-                                <p class="project-description">Sol Optix Online is a beautiful website with visual simulations of different types of lenses.</p>
-                                <p class="see-more">See More</p>
-                            </div>
-                        </button>
-                        <div class="project-content">
-                            <div class="project-content-inner">
-                                <div class="decorative-bar" aria-hidden="true"></div>
-                                <div class="head">
-                                    <img src="./assets/sol/sol.png" alt="Sol Optix Logo" class="project-logo">
-                                    <div class="title-group">
-                                        <h2 class="title">Sol Optix Online</h2>
-                                        <p class="tags">Liquid / Vue / SCSS / Gulp</p>
-                                        <div class="cta-group">
-                                            <a href="https://soloptixonline.com/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                        </div>
-                                    </div>
-                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
-                                </div>
-                                <div class="body">
-                                    <section class="about">
-                                        <h3>About Sol Optix Online</h3>
-                                        <p><span class="color-red">Sol Optix</span> is an eyewear retail store based in Calgary, AB, Canada, offering eye health services like eye exams. I collaborated with a marketing manager and a graphic designer to create a visually pleasing website that represents the physical store.</span></p>
-                                    </section>
-                                    <section class="image">
-                                        <img class="zoomable" src="./assets/sol/ss1.png" alt="Screenshot of Sol Optix Online homepage.">
-                                    </section>
-                                    <section class="marketing-and-design">
-                                        <h3>Marketing and Design</h3>
-                                        <p>There are overlapping tasks we shared among the team members. From the experience I had the opportunity to be involved in other fields such as design, branding and marketing.</p>
-                                    </section>
-                                    <section class="the-website">
-                                        <h3>The Website</h3>
-                                        <p>Sol Optix is one of the sites where the team emphasized on presentation, branding and creative design. The website includes web-based visual simulators for different kinds of lenses, which can be accessed here. These simulators are currently being used as a marketing tool at the store level.</p>
-                                    </section>
-                                    <section class="image">
-                                        <img class="zoomable" src="./assets/sol/ss2.png" alt="Screenshot of a lens simulator from the Sol Optix website">
-                                    </section>
-                                    <a href="https://soloptixonline.com/" class="button-1" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
-                        </div>
-                    </li>
-
-                    <li id="markdown-previewer" class="project">
-                        <button onclick="openProject('markdown-previewer')" class="project-handle">
-                            <img src="./assets/markdown-previewer/mp.png" alt="Markdown Previewer Logo" class="project-logo">
-                            <div class="project-summary">
-                                <div class="project-title">
-                                    <h3>Markdown Previewer</h3>
-                                    <span class="personal-project">Personal Project</span>
-                                </div>
-                                <p class="project-description">Markdown Previewer is a simple personal project made using React JS.</p>
-                                <p class="see-more">See More</p>
-                            </div>
-                        </button>
-                        <div class="project-content">
-                            <div class="project-content-inner">
-                                <div class="decorative-bar" aria-hidden="true"></div>
-                                <div class="head">
-                                    <img src="./assets/markdown-previewer/mp.png" alt="Markdown Previewer logo" class="project-logo">
-                                    <div class="title-group">
-                                        <h2 class="title">Markdown Previewer</h2>
-                                        <p class="tags">React / SCSS</p>
-                                        <div class="cta-group">
-                                            <a href="https://jemherrera.github.io/markdown-previewer/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <div class="separator" aria-hidden="true"></div>
-                                            <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/markdown-previewer"><i class="fa-brands fa-github"></i></a>
-                                        </div>
-                                    </div>
-                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
-                                </div>
-                                <div class="body">
-                                    <section class="about">
-                                        <h3>About Markdown Previewer</h3>
-                                        <p><span class="color-red">Markdown Previewer</span> is a simple project that I built while learning React.js. Previewer is one of the requirement projects in freeCodeCamp's course "Front End Development Libraries". The project features a markdown editor, where user can type Github flavored markdown that gets rendered automatically into HTML live in the preview.</span></p>
-                                    </section>
-
-                                    <section class="development">
-                                        <h3>The Development</h3>
-                                        <p>The development process involves binding a textarea element(Editor) into a React state, and using a library called <a target="_blank" href="https://github.com/markdown-it/markdown-it"><span class="color-teal">Markdown It</span></a> to parse user input into the desired Markdown HTML.</p>
-                                    </section>
-                                    <a href="https://jemherrera.github.io/markdown-previewer" class="button-1" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
-                        </div>
-                    </li>
-
-                    <li id="sense-of-neumor" class="project">
-                        <button onclick="openProject('sense-of-neumor')" class="project-handle">
-                            <img src="./assets/sense-of-neumor/sense-of-neumor.png" alt="Sense of Neumor logo" class="project-logo">
-                            <div class="project-summary">
-                                <div class="project-title">
-                                    <h3>Sense of Neumor</h3>
-                                    <span class="personal-project">Personal Project</span>
-                                </div>
-                                <p class="project-description">Sense of Neumor is a simple fun project. The goal is to showcase a dynamically rendered UI shadow based on a draggable light source.</p>
-                                <p class="see-more">See More</p>
-                            </div>
-                        </button>
-                        <div class="project-content">
-                            <div class="project-content-inner">
-                                <div class="decorative-bar" aria-hidden="true"></div>
-                                <div class="head">
-                                    <img src="./assets/sense-of-neumor/sense-of-neumor.png" alt="Sense of Neumor logo" class="project-logo">
-                                    <div class="title-group">
-                                        <h2 class="title">Sense of Neumor</h2>
-                                        <p class="tags">Vanila Js / SCSS</p>
-                                        <div class="cta-group">
-                                            <a href="https://jemherrera.github.io/sense-of-neumor/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <div class="separator" aria-hidden="true"></div>
-                                            <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/sense-of-neumor"><i class="fa-brands fa-github"></i></a>
-                                        </div>
-                                    </div>
-                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
-                                </div>
-                                <div class="body">
-                                    <section class="about">
-                                        <h3>About Sense of Neumor</h3>
-                                        <p><span class="color-red">Sense of Neumor</span> features Neumorphism, a design style associated with a realistic shadow effect. Neumorphism involves a shadow on one side of an element, as well as a highlight on the opposite side. For this to work the background color must be slightly darker than white to allow the highlight to become visible, creating a more realistic 3D effect.</p>
-                                    </section>
-                                    <section class="dynamic-shadow">
-                                        <h3>Dynamic Shadow</h3>
-                                        <p>To take this to the next level, we can allow the user to drag a light source element across the screen, which would result in a change of the angle of the shadow. The process involves computation of the coordinates and angle of the light source relative to the subject element, and then converting the values into css box-shadow syntax.</p>
-                                    </section>
-                                    <section class="image">
-                                        <img class="zoomable" src="./assets/sense-of-neumor/ss1.png" alt="Screenshot of Sense of Neumor project">
-                                    </section>
-                                    <section class="future-plans">
-                                        <h3>Future Plans</h3>
-                                        <p>This project is still a work in progress. My plans for the next phase is to allow users to be able to adjust the light intensity, adjust the subject’s size and radius, as well as switch into dark mode. I also would love to include an auto-generated css box where users can copy the css for the given setup.</p>
-                                    </section>
-                                    <a target="_blank" href="https://jemherrera.github.io/sense-of-neumor/" class="button-1">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
-                        </div>
-                    </li>
-
-                    <li id="eye-hub-warehouse" class="project">
-                        <button onclick="openProject('eye-hub-warehouse')" class="project-handle">
-                            <img src="./assets/ehw/ehw.png" alt="Eye Hub Warehouse Logo" class="project-logo">
-                            <div class="project-summary">
-                                <div class="project-title">
-                                    <h3>Eye Hub Warehouse</h3>
-                                </div>
-                                <p class="project-description">Eye Hub Warehouse is an e-commerce store that sells prescription eyeglasses and sunglasses online.</p>
-                                <p class="see-more">See More</p>
-                            </div>
-                        </button>
-                        <div class="project-content">
-                            <div class="project-content-inner">
-                                <div class="decorative-bar" aria-hidden="true"></div>
-                                <div class="head">
-                                    <img src="./assets/ehw/ehw.png" alt="Eye Hub Warehouse Logo" class="project-logo">
-                                    <div class="title-group">
-                                        <h2 class="title">Eye Hub Warehouse</h2>
-                                        <p class="tags">Liquid / Vue / Vue Router / SCSS / Gulp</p>
-                                        <div class="cta-group">
-                                            <a href="https://eyehubwarehouse.ca/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                        </div>
-                                    </div>
-                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
-                                </div>
-                                <div class="body">
-                                    <section class="about">
-                                        <h3>About Eye Hub Warehouse</h3>
-                                        <p><span class="color-red">Eyehub Warehouse</span> is an e-commerce store selling prescription glasses online. I collaborated with a marketing manager and a graphic designer to build a site with focus on lead generation, marketing and sales.</p>
-                                    </section>
-                                    <section class="image">
-                                        <img class="zoomable" src="./assets/ehw/ss1.png" alt="Screenshot of Eye Hub Warehouse homepage">
-                                    </section>
-                                    <section class="marketing-and-design">
-                                        <h3>Business Planning, Marketing and Design</h3>
-                                        <p>There are overlapping tasks we shared among the team members. From the experience I had the opportunity to be involved in other fields such as business planning, SEO, design, branding and marketing.</p>
-                                    </section>
-                                    <section class="lens-ordering-system">
-                                        <h3>Lens Ordering System</h3>
-                                        <p>One of the most essential features of this website is its ordering system for prescription lenses. Eye Hub Warehouse not only offers a wide variety of eyewear, but also allows customers to add custom prescription lenses.</p>
-                                    </section>
-                                    <section class="image">
-                                        <img class="zoomable" src="./assets/ehw/ss2.png" alt="Screenshot of the Eyehub Warehouse Lens Ordering System">
-                                    </section>
-                                    <section class="challenges">
-                                        <h3>Challenges</h3>
-                                        <p>One of the technical challenges I encountered while building the site is its prescription system. Aside from the wide variety of lenses, each lens product availability depends on customers’ prescription power. This means that every lens product must have their own “prescription range” associated with them.</p>
-                                    </section>
-                                    <a href="https://eyehubwarehouse.ca/" class="button-1" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
-                        </div>
-                    </li>
-
-                    <li id="post-app" class="project">
-                        <button onclick="openProject('post-app')" class="project-handle">
-                            <img src="./assets/post/post.png" alt="Post App logo" class="project-logo">
-                            <div class="project-summary">
-                                <div class="project-title">
-                                    <h3>Post App</h3>
-                                    <span class="personal-project">Personal Project</span>
-                                </div>
-                                <p class="project-description">Post app is another simple personal project where users can upload multiple images and text and post them to the news feed.</p>
-                                <p class="see-more">See More</p>
-                            </div>
-                        </button>
-                        <div class="project-content">
-                            <div class="project-content-inner">
-                                <div class="decorative-bar" aria-hidden="true"></div>
-                                <div class="head">
-                                    <img src="./assets/post/post.png" alt="Post App logo" class="project-logo">
-                                    <div class="title-group">
-                                        <h2 class="title">Post App</h2>
-                                        <p class="tags">HTML / SCSS / Vanilla JavaScript</p>
-                                        <div class="cta-group">
-                                            <a href="https://jemherrera.github.io/news-post-app/" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                            <div class="separator" aria-hidden="true"></div>
-                                            <a class="icon-link" target="_blank" href="https://github.com/jemHerrera/news-post-app"><i class="fa-brands fa-github"></i></a>
-                                            <a class="icon-link" target="_blank" href="https://www.figma.com/file/ubkjHeHkAuyMJCBNsLHlMp/Mock-Posting-App?node-id=0%3A1"><i class="fa-brands fa-figma"></i></a>
-                                        </div>
-                                    </div>
-                                    <button class="close-button"><i onclick="closeProjects()" class="fa-solid fa-xmark"></i></button>
-                                </div>
-                                <div class="body">
-                                    <section class="about">
-                                        <h3>About Post App</h3>
-                                        <p><span class="color-red">Post App</span> is a simple mock application for mobile. The objective is to create a news feed-style app where a user can create a post containing text and images, which will then be rendered into the news feed, much like social media feeds.</span></p>
-                                    </section>
-                                    <section class="images">
-                                        <img class="zoomable" src="./assets/post/ss1.PNG" alt="Screenshot from Post App, featuring the homepage">
-                                        <img class="zoomable" src="./assets/post/ss2.PNG" alt="Screenshot from Post App, featuring the 'Create New Post' panel">
-                                        <img class="zoomable" src="./assets/post/ss3.PNG" alt="Screenshot from Post App, featuring the news feed section">
-                                    </section>
-                                    <section class="objectives">
-                                        <h3>Features</h3>
-                                        <p>The following are the objectives of the project:</p>
-                                        <ul>
-                                            <li>User interface must be simple and easy to use.</li>
-                                            <li>User must be able to post text and upload multiple images.</li>
-                                            <li>Edge cases such as clearing user input when cancelling a post must be handled.</li>
-                                        </ul>
-                                    </section>
-                                    <a href="https://jemherrera.github.io/news-post-app/" class="button-1" target="_blank">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                </div>
-                            </div>
-                            <div onclick="closeProjects()" class="project-background" aria-hidden="true"></div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section class="main-section" id="about">
-                <div class="title">
-                    <img src="./assets/pixelpfp.jpg" alt="My profile picture, showing a self pixel art portrait" class="pfp">
-                    <h2>About Me</h2>
-                    <p class="color-gray3">My experience, skills and interests.</p>
-                </div>
-                <div class="stories">
-                    <div id="story-experience" class="story">
-                        <h3>Experience</h3>
-                        <p>My work experience is primarily from Eylence Group, an eyewear conglomerate. After studying in 2018, I was hired in a small team as a web developer and was tasked to lead the development of a number of ecommerce sites. From the experience, I learned a variety of skills such as designing UI, prototyping, consuming API, manipulating the DOM, using Front-End frameworks and more. In the beginning of 2023 I started to work at Motiv digital as a Frontend developer.</p>
-                    </div>
-                    <div id="story-skills" class="story">
-                        <h3>Skills</h3>
-                        <p>My technical skills include prototyping, wireframing, UI design and front-end code. My prototyping software of choice is Figma, while my framework of choice is Vue (React and TypeScript learning in progress).</p>
-                    </div>
-                    <div id="story-hobby" class="story">
-                        <h3>Outide Dev</h3>
-                        <p>Outside work, I am lifetime learner who likes to learn, improve and optimize on many random things. In my free time, I like to create art, study philosophy, learn Japanese, work out, train martial arts and practice yoga. Check out my art portfolio <a href="https://www.instagram.com/sinchemy_art/" target="_blank"><span class="color-teal">here</span></a>.</p>
-                    </div>
-                </div>
-                <div class="work-experience">
-                    <h3>Work Experience</h3>
-                    <ul class="experience-list">
-                        <li id="motiv" class="experience">
-                            <div class="details">
-                                <h4 class="title">Motiv Digital</h4>
-                            </div>
-                            <div class="position-and-date">
-                                <p class="position color-gray3">Frontend Developer</p>
-                                <p class="date color-gray3">2023 - Present</p>
-                            </div>
-                        </li>
-                        <li id="eylence-group" class="experience">
-                            <div class="details">
-                                <h4 class="title">Eylence Group</h4>
-                                <ul class="project-list">
-                                    <li class="project" id="project-dol">
-                                        <a href="https://doctorsopticallab.com/" target="_blank">Doctor's Optical Lab <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </li>
-                                    <li class="project" id="project-sol">
-                                        <a href="https://soloptixonline.com/" target="_blank">Sol Optix Online <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </li>
-                                    <li class="project" id="project-eyehub">
-                                        <a href="https://eyehubwarehouse.ca/" target="_blank">Eyehub Warehouse <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="position-and-date">
-                                <p class="position color-gray3">Web Developer</p>
-                                <p class="date color-gray3">2018-2022</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <a class="resume button-1" href="https://github.com/jemHerrera/portfolio/blob/master/assets/Resume.pdf" target="_blank">View Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-                <div class="about-this-site">
-                    <h3>About this website</h3>
-                    <p class="color-gray3">In case you are wondering, this site is</p>
+                <div class="body">
+                  <section class="about">
+                    <h3>About Scriddish</h3>
+                    <p>
+                      <span class="color-red">Scriddish</span> is a single-page
+                      Front-End application built using Vue3. As someone who
+                      likes to cook at home, meal planning can consume a lot of
+                      time, effort and decision making. I built Scriddish not
+                      only as a portfolio project, but also as a tool to help me
+                      save time when planning meals.
+                    </p>
+                  </section>
+                  <section class="images">
+                    <img
+                      class="zoomable"
+                      src="./assets/scriddish//ss1.PNG"
+                      alt="Screenshot of Scriddish app on mobile, featuring the front page showing list of recipes"
+                    />
+                    <img
+                      class="zoomable"
+                      src="./assets/scriddish//ss4.PNG"
+                      alt="Screenshot of Scriddish app on mobile, featuring the meal plan page"
+                    />
+                    <img
+                      class="zoomable"
+                      src="./assets/scriddish//ss5.PNG"
+                      alt="Screenshot of Scriddish app on mobile, featuring the groceries page"
+                    />
+                  </section>
+                  <section class="objectives">
+                    <h3>Features</h3>
+                    <p>The following are the main features of the app:</p>
                     <ul>
-                        <li>Developed on a Macbook Pro using <a target="_blank" href="https://www.figma.com/file/n32Rlx4QTQcvFb8GaRTlsd/Portfolio-2022?node-id=0%3A1"><span class="color-red">Figma</span></a> and VS Code.</li>
-                        <li>Hosted on <a target="_blank" href="https://github.com/jemHerrera/portfolio"><span class="color-red">Github</span></a></li>
-                        <li>Programmed using Vanilla JavaScript</li>
-                        <li>Set in a combination of <a target="_blank" href="https://fonts.google.com/specimen/Roboto+Mono"><span class="color-red">Roboto Mono</span></a> and <a href="https://fonts.google.com/specimen/Montserrat"><span class="color-red">Montserrat</span></a> typefaces</li>
+                      <li>
+                        Choose from a list of recipes and add them to a meal
+                        plan
+                      </li>
+                      <li>
+                        Create a sorted list of ingredients based on the
+                        selected recipes
+                      </li>
+                      <li>Search a recipe by name or ingredient</li>
+                      <li>View a recipe’s cooking instructions</li>
                     </ul>
+                  </section>
+                  <section class="future-plans">
+                    <h3>Future Plans</h3>
+                    <p>
+                      For the next phase of the project, I am planning to
+                      improve the overall design and UX, as well as include user
+                      features, where accounts can be created. Each individual
+                      account can contribute by creating their own recipes, much
+                      like Github but for food recipes.
+                    </p>
+                  </section>
+                  <a
+                    target="_blank"
+                    href="https://jemherrera.github.io/scriddish/"
+                    class="button-1"
+                    >View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
                 </div>
-            </section>
+              </div>
+              <div
+                onclick="closeProjects()"
+                class="project-background"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </li>
+          <li id="blackjack" class="project">
+            <button onclick="openProject('blackjack')" class="project-handle">
+              <img
+                src="./assets/blackjack/chip-vue.png"
+                alt="Vue chip logo"
+                class="project-logo"
+              />
+              <div class="project-summary">
+                <div class="project-title">
+                  <h3>Blackjack with Vue</h3>
+                  <span class="personal-project">Personal Project</span>
+                </div>
+                <p class="project-description">
+                  A game of Blackjack in the browser. Powered by VueJs and
+                  DeckofCards API.
+                </p>
+                <p class="see-more">See More</p>
+              </div>
+            </button>
+            <div class="project-content">
+              <div class="project-content-inner">
+                <div class="decorative-bar" aria-hidden="true"></div>
+                <div class="head">
+                  <img
+                    src="./assets/blackjack/chip-vue.png"
+                    alt="Vue chip logo"
+                    class="project-logo"
+                  />
+                  <div class="title-group">
+                    <h2 class="title">Blackjack with Vue</h2>
+                    <p class="tags">Vue3</p>
+                    <div class="cta-group">
+                      <a
+                        target="_blank"
+                        href="https://jemherrera.github.io/blackjack-game/"
+                        >View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                      <div class="separator" aria-hidden="true"></div>
+                      <a
+                        class="icon-link"
+                        target="_blank"
+                        href="https://github.com/jemHerrera/blackjack-game"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <button class="close-button">
+                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+                <div class="body">
+                  <section class="about">
+                    <h3>About BlackJack Game</h3>
+                    <p>
+                      <span class="color-red">Blackjack</span> is a game
+                      generally played in the Casino using the standard deck of
+                      cards. Also known as Twenty one, the objective of the
+                      player is to win money by creating card totals higher than
+                      those of the dealer's hand but not bust(exceed 21), or by
+                      stopping at a total in the hope that the dealer will bust.
+                    </p>
+                  </section>
+                  <section class="objectives">
+                    <h3>Features</h3>
+                    <p>The following are the main features of the app:</p>
+                    <ul>
+                      <li>Hit, Stand and Double-down player actions.</li>
+                      <li>
+                        Smooth animations for a more ergonomic playing
+                        experience
+                      </li>
+                      <li>
+                        Available in all screen sizes, including tablet and
+                        mobile
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="future-plans">
+                    <h3>Future Plans</h3>
+                    <p>
+                      For the next phase of the project, I am planning to
+                      include the split action. Split is somewhat more complex
+                      that it creates another player entity that has its own
+                      hit, stand or double-down actions.
+                    </p>
+                  </section>
+                  <a
+                    target="_blank"
+                    href="https://jemherrera.github.io/blackjack-game/"
+                    class="button-1"
+                    >View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                onclick="closeProjects()"
+                class="project-background"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </li>
+          <li id="drum-machine" class="project">
+            <button
+              onclick="openProject('drum-machine')"
+              class="project-handle"
+            >
+              <img
+                src="./assets/drum-machine/drum-machine.png"
+                alt="Drum Machine logo"
+                class="project-logo"
+              />
+              <div class="project-summary">
+                <div class="project-title">
+                  <h3>Drum Machine</h3>
+                  <span class="personal-project">Personal Project</span>
+                </div>
+                <p class="project-description">
+                  Drum Machine is a simple personal project made using React JS.
+                </p>
+                <p class="see-more">See More</p>
+              </div>
+            </button>
+            <div class="project-content">
+              <div class="project-content-inner">
+                <div class="decorative-bar" aria-hidden="true"></div>
+                <div class="head">
+                  <img
+                    src="./assets/drum-machine/drum-machine.png"
+                    alt="Drum Machine logo"
+                    class="project-logo"
+                  />
+                  <div class="title-group">
+                    <h2 class="title">Drum Machine</h2>
+                    <p class="tags">React / SCSS</p>
+                    <div class="cta-group">
+                      <a
+                        href="https://jemherrera.github.io/drum-machine/"
+                        target="_blank"
+                        >View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                      <div class="separator" aria-hidden="true"></div>
+                      <a
+                        class="icon-link"
+                        target="_blank"
+                        href="https://github.com/jemHerrera/drum-machine"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <button class="close-button">
+                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+                <div class="body">
+                  <section class="about">
+                    <h3>About Drum Machine</h3>
+                    <p>
+                      <span class="color-red">Drum Machine</span> is a simple
+                      project that I built while learning React.js. Drum Machine
+                      is one of the requirement projects in freeCodeCamp's
+                      course "Front End Development Libraries". The project
+                      features 9 drum pads, each representing a keyboard key
+                      that when pressed, triggers an audio clip.
+                    </p>
+                  </section>
 
-            <!-- div container for any images that needs to be zoomed -->
-            <div id="lightbox"></div>
-        </main>
-    </body>
+                  <section class="design">
+                    <h3>The Design</h3>
+                    <p>
+                      The design is Retro inspired, featuring glowing pink and
+                      blue neon colors on a dark purpleish background. I played
+                      around with CSS's transform skew and box shadow properties
+                      attempting to create a nice 3D effect.
+                    </p>
+                  </section>
+                  <a
+                    href="https://jemherrera.github.io/drum-machine/"
+                    class="button-1"
+                    target="_blank"
+                    >View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                onclick="closeProjects()"
+                class="project-background"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </li>
+          <li id="markdown-previewer" class="project">
+            <button
+              onclick="openProject('markdown-previewer')"
+              class="project-handle"
+            >
+              <img
+                src="./assets/markdown-previewer/mp.png"
+                alt="Markdown Previewer Logo"
+                class="project-logo"
+              />
+              <div class="project-summary">
+                <div class="project-title">
+                  <h3>Markdown Previewer</h3>
+                  <span class="personal-project">Personal Project</span>
+                </div>
+                <p class="project-description">
+                  Markdown Previewer is a simple personal project made using
+                  React JS.
+                </p>
+                <p class="see-more">See More</p>
+              </div>
+            </button>
+            <div class="project-content">
+              <div class="project-content-inner">
+                <div class="decorative-bar" aria-hidden="true"></div>
+                <div class="head">
+                  <img
+                    src="./assets/markdown-previewer/mp.png"
+                    alt="Markdown Previewer logo"
+                    class="project-logo"
+                  />
+                  <div class="title-group">
+                    <h2 class="title">Markdown Previewer</h2>
+                    <p class="tags">React / SCSS</p>
+                    <div class="cta-group">
+                      <a
+                        href="https://jemherrera.github.io/markdown-previewer/"
+                        target="_blank"
+                        >View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                      <div class="separator" aria-hidden="true"></div>
+                      <a
+                        class="icon-link"
+                        target="_blank"
+                        href="https://github.com/jemHerrera/markdown-previewer"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <button class="close-button">
+                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+                <div class="body">
+                  <section class="about">
+                    <h3>About Markdown Previewer</h3>
+                    <p>
+                      <span class="color-red">Markdown Previewer</span> is a
+                      simple project that I built while learning React.js.
+                      Previewer is one of the requirement projects in
+                      freeCodeCamp's course "Front End Development Libraries".
+                      The project features a markdown editor, where user can
+                      type Github flavored markdown that gets rendered
+                      automatically into HTML live in the preview.
+                    </p>
+                  </section>
+
+                  <section class="development">
+                    <h3>The Development</h3>
+                    <p>
+                      The development process involves binding a textarea
+                      element(Editor) into a React state, and using a library
+                      called
+                      <a
+                        target="_blank"
+                        href="https://github.com/markdown-it/markdown-it"
+                        ><span class="color-teal">Markdown It</span></a
+                      >
+                      to parse user input into the desired Markdown HTML.
+                    </p>
+                  </section>
+                  <a
+                    href="https://jemherrera.github.io/markdown-previewer"
+                    class="button-1"
+                    target="_blank"
+                    >View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                onclick="closeProjects()"
+                class="project-background"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </li>
+          <li id="sense-of-neumor" class="project">
+            <button
+              onclick="openProject('sense-of-neumor')"
+              class="project-handle"
+            >
+              <img
+                src="./assets/sense-of-neumor/sense-of-neumor.png"
+                alt="Sense of Neumor logo"
+                class="project-logo"
+              />
+              <div class="project-summary">
+                <div class="project-title">
+                  <h3>Sense of Neumor</h3>
+                  <span class="personal-project">Personal Project</span>
+                </div>
+                <p class="project-description">
+                  Sense of Neumor is a simple fun project. The goal is to
+                  showcase a dynamically rendered UI shadow based on a draggable
+                  light source.
+                </p>
+                <p class="see-more">See More</p>
+              </div>
+            </button>
+            <div class="project-content">
+              <div class="project-content-inner">
+                <div class="decorative-bar" aria-hidden="true"></div>
+                <div class="head">
+                  <img
+                    src="./assets/sense-of-neumor/sense-of-neumor.png"
+                    alt="Sense of Neumor logo"
+                    class="project-logo"
+                  />
+                  <div class="title-group">
+                    <h2 class="title">Sense of Neumor</h2>
+                    <p class="tags">Vanila Js / SCSS</p>
+                    <div class="cta-group">
+                      <a
+                        href="https://jemherrera.github.io/sense-of-neumor/"
+                        target="_blank"
+                        >View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                      <div class="separator" aria-hidden="true"></div>
+                      <a
+                        class="icon-link"
+                        target="_blank"
+                        href="https://github.com/jemHerrera/sense-of-neumor"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <button class="close-button">
+                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+                <div class="body">
+                  <section class="about">
+                    <h3>About Sense of Neumor</h3>
+                    <p>
+                      <span class="color-red">Sense of Neumor</span> features
+                      Neumorphism, a design style associated with a realistic
+                      shadow effect. Neumorphism involves a shadow on one side
+                      of an element, as well as a highlight on the opposite
+                      side. For this to work the background color must be
+                      slightly darker than white to allow the highlight to
+                      become visible, creating a more realistic 3D effect.
+                    </p>
+                  </section>
+                  <section class="dynamic-shadow">
+                    <h3>Dynamic Shadow</h3>
+                    <p>
+                      To take this to the next level, we can allow the user to
+                      drag a light source element across the screen, which would
+                      result in a change of the angle of the shadow. The process
+                      involves computation of the coordinates and angle of the
+                      light source relative to the subject element, and then
+                      converting the values into css box-shadow syntax.
+                    </p>
+                  </section>
+                  <section class="image">
+                    <img
+                      class="zoomable"
+                      src="./assets/sense-of-neumor/ss1.png"
+                      alt="Screenshot of Sense of Neumor project"
+                    />
+                  </section>
+                  <section class="future-plans">
+                    <h3>Future Plans</h3>
+                    <p>
+                      This project is still a work in progress. My plans for the
+                      next phase is to allow users to be able to adjust the
+                      light intensity, adjust the subject’s size and radius, as
+                      well as switch into dark mode. I also would love to
+                      include an auto-generated css box where users can copy the
+                      css for the given setup.
+                    </p>
+                  </section>
+                  <a
+                    target="_blank"
+                    href="https://jemherrera.github.io/sense-of-neumor/"
+                    class="button-1"
+                    >View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                onclick="closeProjects()"
+                class="project-background"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </li>
+          <li id="post-app" class="project">
+            <button onclick="openProject('post-app')" class="project-handle">
+              <img
+                src="./assets/post/post.png"
+                alt="Post App logo"
+                class="project-logo"
+              />
+              <div class="project-summary">
+                <div class="project-title">
+                  <h3>Post App</h3>
+                  <span class="personal-project">Personal Project</span>
+                </div>
+                <p class="project-description">
+                  Post app is another simple personal project where users can
+                  upload multiple images and text and post them to the news
+                  feed.
+                </p>
+                <p class="see-more">See More</p>
+              </div>
+            </button>
+            <div class="project-content">
+              <div class="project-content-inner">
+                <div class="decorative-bar" aria-hidden="true"></div>
+                <div class="head">
+                  <img
+                    src="./assets/post/post.png"
+                    alt="Post App logo"
+                    class="project-logo"
+                  />
+                  <div class="title-group">
+                    <h2 class="title">Post App</h2>
+                    <p class="tags">HTML / SCSS / Vanilla JavaScript</p>
+                    <div class="cta-group">
+                      <a
+                        href="https://jemherrera.github.io/news-post-app/"
+                        target="_blank"
+                        >View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                      <div class="separator" aria-hidden="true"></div>
+                      <a
+                        class="icon-link"
+                        target="_blank"
+                        href="https://github.com/jemHerrera/news-post-app"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                      <a
+                        class="icon-link"
+                        target="_blank"
+                        href="https://www.figma.com/file/ubkjHeHkAuyMJCBNsLHlMp/Mock-Posting-App?node-id=0%3A1"
+                        ><i class="fa-brands fa-figma"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <button class="close-button">
+                    <i onclick="closeProjects()" class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+                <div class="body">
+                  <section class="about">
+                    <h3>About Post App</h3>
+                    <p>
+                      <span class="color-red">Post App</span> is a simple mock
+                      application for mobile. The objective is to create a news
+                      feed-style app where a user can create a post containing
+                      text and images, which will then be rendered into the news
+                      feed, much like social media feeds.
+                    </p>
+                  </section>
+                  <section class="images">
+                    <img
+                      class="zoomable"
+                      src="./assets/post/ss1.PNG"
+                      alt="Screenshot from Post App, featuring the homepage"
+                    />
+                    <img
+                      class="zoomable"
+                      src="./assets/post/ss2.PNG"
+                      alt="Screenshot from Post App, featuring the 'Create New Post' panel"
+                    />
+                    <img
+                      class="zoomable"
+                      src="./assets/post/ss3.PNG"
+                      alt="Screenshot from Post App, featuring the news feed section"
+                    />
+                  </section>
+                  <section class="objectives">
+                    <h3>Features</h3>
+                    <p>The following are the objectives of the project:</p>
+                    <ul>
+                      <li>User interface must be simple and easy to use.</li>
+                      <li>
+                        User must be able to post text and upload multiple
+                        images.
+                      </li>
+                      <li>
+                        Edge cases such as clearing user input when cancelling a
+                        post must be handled.
+                      </li>
+                    </ul>
+                  </section>
+                  <a
+                    href="https://jemherrera.github.io/news-post-app/"
+                    class="button-1"
+                    target="_blank"
+                    >View Project
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                onclick="closeProjects()"
+                class="project-background"
+                aria-hidden="true"
+              ></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- div container for any images that needs to be zoomed -->
+      <div id="lightbox"></div>
+    </main>
+  </body>
 </html>

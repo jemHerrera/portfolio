@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"); /* Large devices (laptops/desktops, < 1200px) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* Large devices (laptops/desktops, < 1200px) */
 /* Medium devices (landscape tablets, < 992px) */
 /* Small devices (portrait tablets and large phones, < 768px) */
 html {
@@ -20,13 +21,15 @@ html {
   font-family: "Roboto Mono", monospace;
 }
 
-h1, h1 span {
+h1,
+h1 span {
   font-family: "Montserrat", sans-serif;
   font-size: 64px;
   font-weight: 700;
 }
 @media only screen and (max-width: 600px) {
-  h1, h1 span {
+  h1,
+  h1 span {
     font-size: 48px;
   }
 }
@@ -38,11 +41,17 @@ h2 {
 }
 
 h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h4 {
   font-size: 18.4px;
   font-weight: 700;
 }
 
-button:focus, a:focus {
+button:focus,
+a:focus {
   outline: 2px solid #00ffee;
 }
 
@@ -76,6 +85,13 @@ button:focus, a:focus {
 
 .color-gray6 {
   color: #ffffff;
+}
+
+.color-teal--hover:hover {
+  color: #00ffee;
+}
+.color-teal--hover:hover * {
+  color: #00ffee;
 }
 
 .button-1 {
@@ -152,33 +168,39 @@ body.overflow-hidden, body.freeze {
   justify-content: center;
   gap: 3em;
 }
-#introduction > div {
+#introduction .title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1.5em;
 }
-#introduction > div.content p {
-  color: #b7b5c4;
-  line-height: 1.5;
+#introduction .title .pic {
+  height: 8em;
+  width: 8em;
+  border-radius: 10em;
+  margin-bottom: 1em;
 }
-#introduction > div.cta .socials {
+#introduction .title .content {
+  color: #b7b5c4;
+  line-height: 2;
+}
+#introduction .title .cta .socials {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
   gap: 1.25em;
 }
-#introduction > div.cta .socials i {
+#introduction .title .cta .socials i {
   font-size: 1.5em;
   color: #5D5B6B;
 }
-#introduction > div.cta .socials i:hover {
+#introduction .title .cta .socials i:hover {
   color: #ffffff;
 }
 @media only screen and (max-width: 600px) {
-  #introduction > div.cta a {
+  #introduction .title .cta a {
     width: 100%;
     text-align: center;
   }
@@ -459,12 +481,10 @@ body.overflow-hidden, body.freeze {
     padding: 0 0 3rem 0;
   }
   #projects > *.project-list .project .project-content.active .project-content-inner .decorative-bar {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
   #projects > *.project-list .project .project-content.active .project-content-inner .head {
-    position: -webkit-sticky;
     position: sticky;
     top: 3px;
     padding: 1rem;
@@ -507,169 +527,55 @@ body.overflow-hidden, body.freeze {
   }
 }
 
-#about {
+#experience {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  gap: 3em;
+  gap: 2.5em;
 }
-#about > * {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1em;
+#experience .title {
+  margin-bottom: 0.5em;
 }
-#about > *.title img {
-  height: 6em;
-  width: 6em;
-  border-radius: 10em;
-  margin-bottom: 1em;
-}
-#about > *.stories {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 2em;
-}
-#about > *.stories .story {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1em;
-}
-#about > *.stories .story p {
-  color: #b7b5c4;
-  line-height: 1.5;
-}
-#about > *.stories .story p a {
-  font-style: italic;
-}
-#about > *.stories .story p a .color-teal:hover {
-  border-bottom: 1px solid #00ffee;
-}
-#about > *.stories .story p a .color-red:hover {
-  border-bottom: 1px solid #f50e43;
-}
-#about > *.stories .story #skill-map {
-  width: 100%;
-  max-height: 300px;
-  margin: 2rem 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
-}
-#about > *.work-experience {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 2em;
-  border-top: 1px solid #5D5B6B;
-  border-bottom: 1px solid #5D5B6B;
-  padding: 4rem 0;
-}
-#about > *.work-experience .experience-list {
+#experience .experience-list {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: flex-start;
-  gap: 2rem;
-  width: 100%;
+  justify-content: center;
+  gap: 2em;
 }
-#about > *.work-experience .experience-list .experience {
+#experience .experience:not(:last-child) {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #292734;
+}
+#experience .position-and-date {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
   gap: 0;
-  width: 100%;
+  margin-bottom: 1em;
 }
-#about > *.work-experience .experience-list .experience .details {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  gap: 1em;
-}
-#about > *.work-experience .experience-list .experience .details .title {
-  font-weight: 700;
-}
-#about > *.work-experience .experience-list .experience .details .project-list {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  gap: 0.5em;
-}
-#about > *.work-experience .experience-list .experience .details .project-list li {
-  margin-left: 1em;
-}
-#about > *.work-experience .experience-list .experience .details .project-list li a, #about > *.work-experience .experience-list .experience .details .project-list li a > i {
+#experience .about {
+  margin-bottom: 1em;
+  font-size: 0.9em;
   color: #b7b5c4;
 }
-#about > *.work-experience .experience-list .experience .details .project-list li a:hover, #about > *.work-experience .experience-list .experience .details .project-list li a > i:hover {
-  color: #00ffee;
-  border-bottom: 1px solid #00ffee;
+#experience .projects {
+  margin: 1em 0;
 }
-#about > *.work-experience .experience-list .experience .details .project-list li a:hover i, #about > *.work-experience .experience-list .experience .details .project-list li a > i:hover i {
-  color: #00ffee;
+#experience .projects-title {
+  margin-bottom: 1em;
 }
-#about > *.work-experience .experience-list .experience .position-and-date {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  gap: 0;
-}
-#about > *.work-experience .experience-list .experience .position-and-date .position, #about > *.work-experience .experience-list .experience .position-and-date .date {
-  text-align: left;
-}
-#about > *.about-this-site ul {
+#experience .project-list {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 0.5em;
-  padding: 1em;
 }
-#about > *.about-this-site ul li {
-  list-style-type: disc;
-  margin-left: 1em;
-}
-#about > *.about-this-site ul li a:hover {
-  border-bottom: 1px solid #f50e43;
-}
-@media only screen and (max-width: 600px) {
-  #about > *.work-experience .experience-list .experience {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 1em;
-  }
-  #about > *.work-experience .experience-list .experience .details {
-    gap: 0;
-  }
-  #about > *.work-experience .experience-list .experience .details .project-list {
-    gap: 0;
-  }
-  #about > *.work-experience .experience-list .experience .details .project-list li {
-    margin-left: 0;
-  }
-  #about > *.work-experience .experience-list .experience .details .project-list li a {
-    font-size: 0.8em;
-  }
-  #about > *.work-experience .resume {
-    width: 100%;
-  }
-  #about > *.about-this-site ul {
-    padding: 0;
-  }
+#experience .project:hover a {
+  text-decoration: underline;
 }
 
 .side-nav {

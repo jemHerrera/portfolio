@@ -1,35 +1,59 @@
+@use "../abstracts/index" as *;
 
-@use '../abstracts/index' as *;
+.color-red {
+  color: $color-red;
+}
+.color-teal {
+  color: $color-teal;
+}
+.color-gray0 {
+  color: $color-gray0;
+}
+.color-gray1 {
+  color: $color-gray1;
+}
+.color-gray2 {
+  color: $color-gray2;
+}
+.color-gray3 {
+  color: $color-gray3;
+}
+.color-gray4 {
+  color: $color-gray4;
+}
+.color-gray6 {
+  color: $color-gray6;
+}
 
-.color-red{color: $color-red}
-.color-teal{color: $color-teal}
-.color-gray0{color: $color-gray0}
-.color-gray1{color: $color-gray1}
-.color-gray2{color: $color-gray2}
-.color-gray3{color: $color-gray3}
-.color-gray4{color: $color-gray4}
-.color-gray6{color: $color-gray6}
-
-.button-1{
-    padding: 1em 2em;
-    background-color: $color-gray1;
-    border: 2px solid $color-gray3;
-    text-align: center;
-
-    &:hover{
-        background-color: $color-gray2;
-        border: 2px solid $color-gray4;
+.color-teal--hover {
+  &:hover {
+    color: $color-teal;
+    * {
+      color: $color-teal;
     }
+  }
 }
 
-.font-weight-300{
-    font-weight: 300;
+.button-1 {
+  padding: 1em 2em;
+  background-color: $color-gray1;
+  border: 2px solid $color-gray3;
+  text-align: center;
+
+  &:hover {
+    background-color: $color-gray2;
+    border: 2px solid $color-gray4;
+  }
 }
 
-.z-index-0{
-    z-index: 0 !important;
+.font-weight-300 {
+  font-weight: 300;
 }
 
-.display-none{
-    display: none;
+.z-index-0 {
+  z-index: 0 !important;
+}
+
+.display-none {
+  display: none;
 }

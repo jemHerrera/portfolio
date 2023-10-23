@@ -4,16 +4,22 @@
     min-height: 100vh;
     @include flex($direction:column, $justify:center, $gap: 3em);
     
-    >div{
+    .title{
         @include flex($direction:column, $align:flex-start, $gap: 1.5em);
 
-        &.content{
-            p{
-                color: $color-gray5;
-                line-height: 1.5;
-            }
+        .pic{
+            height: 8em;
+            width: 8em;
+            border-radius: 10em;
+            margin-bottom: 1em;
         }
-        &.cta{
+
+        .content{
+            color: $color-gray5;
+            line-height: 2;
+        }
+
+        .cta{
             .socials{
                 @include flex($gap: 1.25em);
                 i{

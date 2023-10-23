@@ -1,0 +1,47 @@
+@use "../abstracts/index" as *;
+
+#experience {
+  @include flex($direction: column, $justify: center, $gap: 2.5em);
+
+  .title {
+    margin-bottom: 0.5em;
+  }
+
+  .experience-list {
+    @include flex($direction: column, $justify: center, $gap: 2em);
+  }
+
+  .experience:not(:last-child) {
+    padding-bottom: 1em;
+    border-bottom: 1px solid $color-gray2;
+  }
+
+  .position-and-date {
+    @include flex($direction: row, $justify: space-between);
+    margin-bottom: 1em;
+  }
+
+  .about {
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    color: $color-gray5;
+  }
+
+  .projects {
+    margin: 1em 0;
+  }
+
+  .projects-title {
+    margin-bottom: 1em;
+  }
+
+  .project-list {
+    @include flex($direction: column, $justify: center, $gap: 0.5em);
+  }
+
+  .project:hover {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
