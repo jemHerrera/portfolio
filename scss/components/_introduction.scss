@@ -1,7 +1,7 @@
 @use '../abstracts/index' as *;
 
 #introduction{
-    min-height: 100vh;
+    min-height: 80vh;
     @include flex($direction:column, $justify:center, $gap: 3em);
     
     .title{
